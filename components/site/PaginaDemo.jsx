@@ -31,7 +31,7 @@ export default function PaginaDemo({ demo, basePath, servico }) {
   // indexável — numa demo com noindex seriam ruído.
   const ld = ehCliente
     ? [localBusiness({ lead, enrich, local, cliente, url: raiz ?? basePath,
-                       imagem: tema.hero?.image }),
+                       imagem: tema.hero?.image, logotipo: tema.logo }),
        faqPage(cliente?.faq)].filter(Boolean)
     : [];
 
