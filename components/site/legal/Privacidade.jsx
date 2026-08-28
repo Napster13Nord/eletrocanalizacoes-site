@@ -75,10 +75,17 @@ export default function PoliticaPrivacidade() {
             terceiros.
           </p>
           <p>
-            De cada visita guardamos apenas a página, a data, o endereço de onde veio, o
-            identificador do navegador e um código irreversível calculado a partir do endereço IP —
-            que serve para não contar a mesma pessoa duas vezes e não permite identificá-la. O
-            endereço IP em si nunca é guardado. Estes registos são apagados ao fim de 12 meses.
+            De cada visita guardamos apenas a página, a data, o nome do site de onde veio, o
+            identificador do navegador, o tempo que esteve na página, o país e a localidade, e um
+            código irreversível calculado a partir do endereço IP — que serve para não contar a
+            mesma pessoa duas vezes e não permite identificá-la. O endereço IP em si nunca é
+            guardado.
+          </p>
+          <p>
+            A localidade vem da rede por onde se liga e é aproximada: diz o concelho, não a morada.
+            Do site de onde veio guardamos só o nome — <em>google.com</em>, por exemplo — e nunca o
+            endereço completo, que poderia conter aquilo que pesquisou. Estes registos são apagados
+            ao fim de 12 meses e servem apenas para o resumo mensal de visitas do negócio.
           </p>
         </section>
       ) : null}

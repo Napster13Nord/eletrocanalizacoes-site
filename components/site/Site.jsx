@@ -1498,6 +1498,14 @@ const conjunto = (url, larguras) =>
 // Ligar ou abrir o WhatsApp é o sinal que separa "espreitou o site" de "quer
 // falar". Só se mede numa proposta: no site de um cliente, saber quem clicou é
 // da operação de vendas e não lhe diz respeito — por isso `rastrear` desliga-o.
+// O nome do servidor de onde a pessoa veio, e mais nada. O `document.referrer`
+// inteiro podia trazer termos de pesquisa ou identificadores na query, e para o
+// relatório do cliente basta saber que veio do 'google.com'. Visita direta fica
+// em branco, que também é resposta.
+const deOndeVeio = () => {
+  try { return new URL(document.referrer).hostname } catch { return '' }
+}
+
 const registarClique = (tipo, servico) => {
   if (!servico?.rastrear) return
   try {
@@ -1912,7 +1920,7 @@ function FloatingContact() {
   return (
     <a
       href={href}
-      onClick={() => registarClique(hasWhatsApp ? 'whatsapp_click' : 'cta_click', SERVICO)}
+      onClick={() => registarClique(hasWhatsApp ? 'whatsapp_click' : 'telefone_click', SERVICO)}
       {...(hasWhatsApp ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
       aria-label={
         hasWhatsApp ? `Falar com a ${BRAND.name} no WhatsApp` : `Ligar para ${BRAND.phoneDisplay}`
