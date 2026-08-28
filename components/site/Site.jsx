@@ -335,31 +335,16 @@ function Navbar() {
 /* ----------------------------------------------------------------
    2. Hero
 ---------------------------------------------------------------- */
+// O primeiro ecrã não tem animação de entrada nenhuma: o `gsap.from` apagava
+// manchete, botões e telefone depois de o HTML já os ter desenhado, e só os
+// trazia de volta um segundo mais tarde. Quem chega ao site via um ecrã em
+// branco durante esse tempo, e é o pior sítio possível para o fazer.
 function Hero() {
   const { BRAND, HERO, COPY, SERVICO } = useSite()
-  const ref = useRef(null)
-
-  useEffect(() => {
-    if (prefersReducedMotion) return
-    const ctx = gsap.context(() => {
-      gsap.from('.hero-line-1', { y: 40, opacity: 0, duration: 1, delay: 0.3, ease: 'power3.out' })
-      gsap.from('.hero-line-2', { y: 60, opacity: 0, duration: 1.2, delay: 0.5, ease: 'power3.out' })
-      gsap.from('.hero-cta, .hero-meta', {
-        y: 24,
-        opacity: 0,
-        duration: 0.8,
-        delay: 0.8,
-        stagger: 0.12,
-        ease: 'power3.out',
-      })
-    }, ref)
-    return () => ctx.revert()
-  }, [])
-
   const Particle = HERO.ParticleIcon
 
   return (
-    <section id="inicio" ref={ref} className="relative min-h-[100dvh] overflow-hidden bg-deep">
+    <section id="inicio" className="relative min-h-[100dvh] overflow-hidden bg-deep">
       {/* A maior imagem da página e quase sempre o elemento de LCP: nunca lazy,
           e com prioridade para começar a descarregar antes do resto. */}
       <img
@@ -404,8 +389,8 @@ function Hero() {
         ) : null}
 
         <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-[0.95] max-w-5xl">
-          <span className="hero-line-1 block">{HERO.line1}</span>
-          <span className="hero-line-2 block font-serif italic font-medium text-primary-light">
+          <span className="block">{HERO.line1}</span>
+          <span className="block font-serif italic font-medium text-primary-light">
             {HERO.line2}
           </span>
         </h1>
@@ -414,7 +399,7 @@ function Hero() {
           {HERO.sub}
         </p>
 
-        <div className="hero-cta mt-10 flex flex-wrap gap-3">
+        <div className="mt-10 flex flex-wrap gap-3">
           <a
             href="#contactos"
             className="magnetic-btn inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-lg shadow-primary/30"
@@ -432,7 +417,7 @@ function Hero() {
 
         {/* O custo da chamada acompanha o número onde quer que ele apareça. */}
         {BRAND.phoneNote ? (
-          <p className="hero-cta mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-white/40">
+          <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.18em] text-white/40">
             {BRAND.phoneNote}
           </p>
         ) : null}
