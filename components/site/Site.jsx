@@ -1445,10 +1445,25 @@ const inputCls =
 // já devolve WebP com `auto=format`), portanto o srcset sai de graça: o
 // telemóvel descarrega 640 px em vez dos 2000 do ecrã grande. Sem `w=` no URL
 // não há nada a fazer — devolve undefined e o atributo não é escrito.
+// Duas origens de imagem, dois modos de pedir uma versão estreita:
+//
+//   Unsplash        muda-se o parâmetro `w=` do endereço.
+//   fotos do cliente  o `npm run webp` deixa `nome-640.webp` ao lado da
+//                     original de 1920 px, e é a essas que o srcset aponta.
+//
+// Sem o segundo caso o `srcset` saía `undefined` e um telemóvel de 412 px
+// descarregava a imagem de 1920 px inteira — era o maior atraso do LCP.
+// A escada das fotos locais é fixa porque é a que existe em disco: mudá-la
+// aqui obriga a mudar o `LARGURAS` do `scripts/webp.mjs`.
 const conjunto = (url, larguras) =>
   /[?&]w=\d+/.test(url ?? '')
     ? larguras.map((w) => `${url.replace(/([?&])w=\d+/, `$1w=${w}`)} ${w}w`).join(', ')
-    : undefined
+    : /^\/fotos\/.+\.webp$/.test(url ?? '')
+      ? [640, 960, 1280]
+          .map((w) => `${url.replace(/\.webp$/, `-${w}.webp`)} ${w}w`)
+          .concat(`${url} 1920w`)
+          .join(', ')
+      : undefined
 
 // Ligar ou abrir o WhatsApp é o sinal que separa "espreitou o site" de "quer
 // falar". Só se mede numa proposta: no site de um cliente, saber quem clicou é

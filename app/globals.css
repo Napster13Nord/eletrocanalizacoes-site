@@ -64,14 +64,16 @@
   --brand-primary-shadow: rgb(var(--primary) / 0.35);
 
   /* A combinação de letra por omissão — a mesma que o app/layout.jsx carrega.
+     As `--font-*` vêm do `lib/fontes.js`, que o `next/font` serve do próprio
+     domínio; as famílias a seguir são a reserva do sistema.
      O Tailwind consome estas quatro através de `font-display`, `font-serif`,
      `font-body` e `font-mono`; a barra da demo reescreve-as no documento para
      trocar de combinação sem recarregar. Os valores de reserva estão aqui e
      não só no lib/tipografias.js porque o painel também os usa. */
-  --fonte-display: "Plus Jakarta Sans", system-ui, sans-serif;
-  --fonte-serif: "Cormorant Garamond", Georgia, serif;
-  --fonte-body: "Inter", system-ui, sans-serif;
-  --fonte-mono: "JetBrains Mono", ui-monospace, monospace;
+  --fonte-display: var(--font-display), system-ui, sans-serif;
+  --fonte-serif: var(--font-serif), Georgia, serif;
+  --fonte-body: var(--font-body), system-ui, sans-serif;
+  --fonte-mono: var(--font-mono), ui-monospace, monospace;
 }
 
 @layer base {
