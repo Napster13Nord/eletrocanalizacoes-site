@@ -208,7 +208,7 @@ function Marca({ dim = 'h-9 w-9', ring = false }) {
   if (BRAND.logo) {
     return (
       <span className={`relative flex ${dim} items-center justify-center shrink-0`}>
-        <img src={BRAND.logo} alt="" className="h-full w-full object-contain" />
+        <img src={BRAND.logo} alt={BRAND.name} className="h-full w-full object-contain" />
       </span>
     )
   }
@@ -1279,7 +1279,7 @@ function ReviewAvatar({ review, size = 'w-12 h-12' }) {
     return (
       <img
         src={review.avatar}
-        alt=""
+        alt={`Foto de ${review.author}`}
         width="48"
         height="48"
         loading="lazy"

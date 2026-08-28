@@ -1,5 +1,9 @@
 import './globals.css';
 
+export const metadata = {
+  icons: { icon: '/logos/eletrocanalizacoes.png', shortcut: '/logos/eletrocanalizacoes.png', apple: '/logos/eletrocanalizacoes.png' },
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-PT">
