@@ -30,7 +30,8 @@ export default function PaginaDemo({ demo, basePath, servico }) {
   // horário sem os ter de adivinhar do HTML. Só valem quando a página é
   // indexável — numa demo com noindex seriam ruído.
   const ld = ehCliente
-    ? [localBusiness({ lead, enrich, local, cliente, url: raiz ?? basePath }),
+    ? [localBusiness({ lead, enrich, local, cliente, url: raiz ?? basePath,
+                       imagem: tema.hero?.image }),
        faqPage(cliente?.faq)].filter(Boolean)
     : [];
 
