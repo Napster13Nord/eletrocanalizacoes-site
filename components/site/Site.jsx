@@ -2,8 +2,6 @@
 // GERADO por scripts/port-app.mjs a partir de _gerador/tpl/App.jsx — não editar à mão.
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import {
   ArrowUpRight,
   Phone,
@@ -17,7 +15,44 @@ import {
 } from 'lucide-react'
 import { useSite, SiteProvider } from './SiteContext'
 
-gsap.registerPlugin(ScrollTrigger)
+// O GSAP e o ScrollTrigger só animam secções abaixo da primeira dobra: a
+// página desenha-se inteira sem eles. No pacote inicial eram ~50 kB a disputar
+// a rede com a imagem do herói, que é a que decide o LCP — por isso passam a
+// ser pedidos só depois do `load`, quando o herói já apareceu. A promessa fica
+// guardada: os três sítios que animam partilham o mesmo pedido.
+let promessaGsap
+const carregarGsap = () => (promessaGsap ??= Promise
+  .all([import('gsap'), import('gsap/ScrollTrigger')])
+  .then(([{ gsap }, { ScrollTrigger }]) => {
+    gsap.registerPlugin(ScrollTrigger)
+    return { gsap, ScrollTrigger }
+  }))
+
+// Devolve como se desfaz a espera, para o efeito não deixar ouvintes para trás.
+const depoisDoLoad = (fn) => {
+  if (document.readyState === 'complete') { fn(); return () => {} }
+  window.addEventListener('load', fn, { once: true })
+  return () => window.removeEventListener('load', fn)
+}
+
+// Esperar pelo `load`, pedir o GSAP, montar o contexto quando ele chegar e
+// desfazê-lo ao sair — mesmo que a saída aconteça antes de qualquer uma dessas
+// coisas responder. Sem o `saiu`, uma navegação rápida deixava uma animação
+// presa a elementos que já não existem.
+function useAnimacao(montar, ref) {
+  useEffect(() => {
+    if (prefersReducedMotion) return
+    let ctx
+    let saiu = false
+    const parar = depoisDoLoad(() => {
+      carregarGsap().then(({ gsap }) => {
+        if (saiu) return
+        ctx = gsap.context(() => montar(gsap), ref)
+      })
+    })
+    return () => { saiu = true; parar(); ctx?.revert() }
+  }, [])
+}
 
 const prefersReducedMotion =
   typeof window !== 'undefined' &&
@@ -953,20 +988,16 @@ function Features() {
   const { FEATURES, COPY } = useSite()
   const sectionRef = useRef(null)
 
-  useEffect(() => {
-    if (prefersReducedMotion) return
-    const ctx = gsap.context(() => {
-      gsap.from('.feature-card', {
-        scrollTrigger: { trigger: sectionRef.current, start: 'top 85%', once: true },
-        y: 40,
-        opacity: 0,
-        duration: 0.8,
-        stagger: 0.15,
-        ease: 'power3.out',
-      })
-    }, sectionRef)
-    return () => ctx.revert()
-  }, [])
+  useAnimacao((gsap) => {
+    gsap.from('.feature-card', {
+      scrollTrigger: { trigger: sectionRef.current, start: 'top 85%', once: true },
+      y: 40,
+      opacity: 0,
+      duration: 0.8,
+      stagger: 0.15,
+      ease: 'power3.out',
+    })
+  }, sectionRef)
 
   return (
     <section id="metodo" ref={sectionRef} className="relative py-24 sm:py-32 grid-bg">
@@ -1081,22 +1112,18 @@ function Protocol() {
   const { STEPS, COPY } = useSite()
   const wrapRef = useRef(null)
 
-  useEffect(() => {
-    if (prefersReducedMotion) return
-    const ctx = gsap.context(() => {
-      const cards = gsap.utils.toArray('.protocol-card')
-      cards.slice(0, -1).forEach((card) => {
-        gsap.to(card, {
-          scrollTrigger: { trigger: card, start: 'top top+=110', end: '+=520', scrub: 1 },
-          scale: 0.92,
-          filter: 'blur(6px) saturate(0.7)',
-          opacity: 0.5,
-          ease: 'none',
-        })
+  useAnimacao((gsap) => {
+    const cards = gsap.utils.toArray('.protocol-card')
+    cards.slice(0, -1).forEach((card) => {
+      gsap.to(card, {
+        scrollTrigger: { trigger: card, start: 'top top+=110', end: '+=520', scrub: 1 },
+        scale: 0.92,
+        filter: 'blur(6px) saturate(0.7)',
+        opacity: 0.5,
+        ease: 'none',
       })
-    }, wrapRef)
-    return () => ctx.revert()
-  }, [])
+    })
+  }, wrapRef)
 
   return (
     <section id="processo" ref={wrapRef} className="relative bg-background pt-24 pb-32">
@@ -1167,20 +1194,16 @@ function ServicesGrid() {
   const { SERVICES, COPY } = useSite()
   const ref = useRef(null)
 
-  useEffect(() => {
-    if (prefersReducedMotion) return
-    const ctx = gsap.context(() => {
-      gsap.from('.svc-tile', {
-        scrollTrigger: { trigger: ref.current, start: 'top 80%', once: true },
-        y: 30,
-        opacity: 0,
-        duration: 0.7,
-        stagger: 0.08,
-        ease: 'power3.out',
-      })
-    }, ref)
-    return () => ctx.revert()
-  }, [])
+  useAnimacao((gsap) => {
+    gsap.from('.svc-tile', {
+      scrollTrigger: { trigger: ref.current, start: 'top 80%', once: true },
+      y: 30,
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.08,
+      ease: 'power3.out',
+    })
+  }, ref)
 
   return (
     <section id="servicos" ref={ref} className="bg-deep text-white py-24 sm:py-32">
@@ -1927,9 +1950,15 @@ function FloatingContact() {
    App
 ---------------------------------------------------------------- */
 function ArvoreDoSite() {
+  // Só há posições para recalcular se houver animações, e sem elas o GSAP nem
+  // chega a ser descarregado.
   useEffect(() => {
-    const id = setTimeout(() => ScrollTrigger.refresh(), 200)
-    return () => clearTimeout(id)
+    if (prefersReducedMotion) return
+    let saiu = false
+    const parar = depoisDoLoad(() => {
+      carregarGsap().then(({ ScrollTrigger }) => { if (!saiu) ScrollTrigger.refresh() })
+    })
+    return () => { saiu = true; parar() }
   }, [])
 
   return (
