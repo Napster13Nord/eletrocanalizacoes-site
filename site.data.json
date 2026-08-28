@@ -1,0 +1,501 @@
+{
+  "_leia": "Personalização deste negócio. É o único ficheiro editável à mão.",
+  "modo": "cliente",
+  "teste": false,
+  "tema": {
+    "slug": "08-canalizador",
+    "colors": {
+      "rgb": "23,23,212",
+      "accent": "#8A6A00",
+      "primary": "#1717D4",
+      "accentDark": "#6E5400",
+      "primaryDark": "#1B1BA6",
+      "primaryLight": "#9FA8F2"
+    },
+    "logoIcon": "Zap",
+    "heroParticleIcon": "Droplets",
+    "faviconPaths": "<path d=\"M12 3c-3 4-6 7.5-6 10.5a6 6 0 0 0 12 0C18 10.5 15 7 12 3z\"/>",
+    "nav": [
+      {
+        "label": "Início",
+        "href": "#inicio"
+      },
+      {
+        "label": "Serviços",
+        "href": "#servicos"
+      },
+      {
+        "label": "Método",
+        "href": "#metodo"
+      },
+      {
+        "label": "Processo",
+        "href": "#processo"
+      },
+      {
+        "label": "Contactos",
+        "href": "#contactos"
+      }
+    ],
+    "services": [
+      {
+        "icon": "Droplets",
+        "text": "Deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.",
+        "title": "Fugas de água"
+      },
+      {
+        "icon": "Zap",
+        "text": "Pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.",
+        "title": "Avarias elétricas"
+      },
+      {
+        "icon": "Waves",
+        "text": "Sanitas, lava-loiças, ralos e tubos de queda. Máquina elétrica e jacto de água de alta pressão.",
+        "title": "Desentupimentos"
+      },
+      {
+        "icon": "Wrench",
+        "text": "Substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.",
+        "title": "Canalização geral"
+      },
+      {
+        "icon": "ShowerHead",
+        "text": "Instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.",
+        "title": "Casas de banho"
+      },
+      {
+        "icon": "Search",
+        "text": "Localizamos o ponto exato da fuga ou da avaria antes de partir seja o que for.",
+        "title": "Diagnóstico antes de abrir"
+      }
+    ],
+    "hero": {
+      "alt": "Eletricista a trabalhar num quadro elétrico",
+      "sub": "Fugas de água, entupimentos, avarias elétricas e pequenos curto-circuitos. Chegamos com a ferramenta certa e deixamos tudo a funcionar antes de sair.",
+      "image": "/fotos/eletrocanalizacoes/eletricista-reparando-quadro-eletrico.webp",
+      "line1": "Água ou luz.",
+      "line2": "Resolvemos as duas.",
+      "eyebrow": "Canalização e eletricidade no Porto"
+    },
+    "copy": {
+      "steps": {
+        "titleA": "Da chamada à casa",
+        "titleB": "a funcionar outra vez.",
+        "eyebrow": "O processo"
+      },
+      "navCta": "Pedir assistência",
+      "contact": {
+        "sub": "Trabalhamos por marcação e tentamos sempre o mesmo dia ou o mais próximo possível. Descreva o que se passa e respondemos no mesmo dia.",
+        "titleA": "Diga-nos o que se passa.",
+        "titleB": "Vamos a caminho.",
+        "fieldLabel": "Descrição do problema",
+        "fieldPlaceholder": "Ex.: fuga de água por baixo do lava-loiça e o quadro elétrico a disparar quando ligo a máquina."
+      },
+      "heroCta": "Pedir assistência",
+      "reviews": {
+        "sub": "Avaliações de clientes com a fuga, o entupimento ou a avaria resolvidos.",
+        "titleA": "O que dizem",
+        "titleB": "os clientes"
+      },
+      "tagline": "Água e eletricidade resolvidas pela mesma equipa.",
+      "features": {
+        "titleA": "Perceber a causa evita",
+        "titleB": "a segunda avaria.",
+        "eyebrow": "Como trabalhamos"
+      },
+      "services": {
+        "titleA": "Canalização e eletricidade,",
+        "titleB": "sem esperas.",
+        "eyebrow": "Serviços"
+      },
+      "footerStatus": "Marcações abertas"
+    },
+    "features": [
+      {
+        "body": "Fugas de água, entupimentos e avarias elétricas são a maior parte das chamadas. Perceber a causa é o que evita repetir o problema daqui a um mês.",
+        "kind": "shuffler",
+        "title": "O que nos chamam para resolver",
+        "bullets": [
+          "Água e eletricidade na mesma visita",
+          "Máquina elétrica e alta pressão",
+          "Causa identificada e explicada"
+        ],
+        "eyebrow": "Chamadas"
+      },
+      {
+        "body": "Uma mancha no teto raramente está por cima da fuga. Localizamos o ponto exato antes de abrir o primeiro azulejo.",
+        "kind": "signature",
+        "title": "Encontrar a fuga sem partir tudo",
+        "bullets": [
+          "Deteção antes de partir",
+          "Reparação localizada",
+          "Ponto exato antes de abrir"
+        ],
+        "eyebrow": "Fugas"
+      },
+      {
+        "body": "Trabalhamos por marcação. Quando nos liga, tentamos sempre encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir.",
+        "kind": "scheduler",
+        "title": "Marcação para o mesmo dia sempre que der",
+        "bullets": [
+          "Dia e hora combinados",
+          "Aviso quando vamos a caminho",
+          "Preço combinado ao telefone"
+        ],
+        "eyebrow": "Marcações"
+      }
+    ],
+    "shuffler": {
+      "items": [
+        {
+          "tag": "Fuga",
+          "meta": "Deteção",
+          "label": "Fuga de água em parede"
+        },
+        {
+          "tag": "Eletricidade",
+          "meta": "Marcado",
+          "label": "Quadro elétrico a disparar"
+        },
+        {
+          "tag": "Sanita",
+          "meta": "Hoje",
+          "label": "Sanita entupida, água a subir"
+        }
+      ],
+      "dotColor": "#1717D4"
+    },
+    "scheduler": {
+      "week": "Semana 14 · Abril",
+      "badge": "Assistência",
+      "confirmed": "Assistência confirmada",
+      "choose": "Escolher um dia"
+    },
+    "signature": {
+      "bg": "linear-gradient(180deg, #F4F5FE 0%, #E8EAFC 70%, #DDE0FA 100%)",
+      "line": "#1B1BA6",
+      "header": {
+        "pad": true,
+        "icon": "Zap",
+        "unit": "hoje",
+        "label": "Assistência ativa",
+        "value": 7,
+        "increment": true
+      },
+      "source": "pipe",
+      "surface": "wave",
+      "particle": {
+        "mode": "fill",
+        "paths": [
+          "M12 2 C 9 9, 4 17, 4 24 a 8 8 0 0 0 16 0 C 20 17, 15 9, 12 2 Z"
+        ],
+        "ratio": 1.5,
+        "rotate": 0,
+        "viewBox": "0 0 24 36",
+        "gradient": [
+          "#FFF4A8",
+          "#FAE00D",
+          "#B08A00"
+        ],
+        "highlight": [
+          9,
+          22,
+          2,
+          3.5
+        ]
+      },
+      "statuses": [
+        {
+          "text": "Água e corrente · em vigilância",
+          "tone": "emerald",
+          "label": "Estável"
+        },
+        {
+          "text": "Fuga detetada · piso 0",
+          "tone": "accent",
+          "label": "Urgente"
+        },
+        {
+          "text": "Técnico a caminho · 15 min",
+          "tone": "primary",
+          "label": "Resposta"
+        },
+        {
+          "text": "Reparado e testado",
+          "tone": "emerald",
+          "label": "Pronto"
+        }
+      ]
+    },
+    "pillars": [
+      {
+        "label": "Avaliações Google",
+        "end": 46,
+        "text": "Clientes no Porto que já avaliaram o trabalho da casa no Google."
+      },
+      {
+        "label": "Classificação média",
+        "end": 5,
+        "decimals": 1,
+        "text": "Média no Google, feita de urgências resolvidas à primeira."
+      },
+      {
+        "label": "Resposta urgente",
+        "end": 60,
+        "suffix": "min",
+        "text": "Tempo habitual de chegada a uma urgência dentro da área de serviço."
+      }
+    ],
+    "steps": [
+      {
+        "n": "01",
+        "alt": "Ralo entupido com água acumulada no chão da casa de banho",
+        "img": "/fotos/eletrocanalizacoes/ralo-entupido-com-agua-acumulada.webp",
+        "text": "Saber se o problema é de água ou de eletricidade, e que aparelhos estão afetados, diz-nos logo o que levar na carrinha.",
+        "title": "Percebemos ao telefone o que se passa",
+        "bullets": [
+          "Aparelhos afetados",
+          "Tipo de edifício",
+          "Equipamento preparado"
+        ],
+        "eyebrow": "Chamada"
+      },
+      {
+        "n": "02",
+        "alt": "Canalizador a reparar a tubagem por baixo do lava-loiça",
+        "img": "/fotos/eletrocanalizacoes/encanador-reparando-tubulacao-debaixo-da-pia.webp",
+        "text": "Reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria elétrica e, quando faz sentido, inspecionamos para perceber porque aconteceu.",
+        "title": "Reparar e perceber a causa",
+        "bullets": [
+          "Ferramenta adequada ao trabalho",
+          "Inspeção quando é preciso",
+          "Espaço protegido"
+        ],
+        "eyebrow": "Intervenção"
+      },
+      {
+        "n": "03",
+        "alt": "Eletricista a testar um quadro elétrico com multímetro",
+        "img": "/fotos/eletrocanalizacoes/eletricista-testando-quadro-com-multimetro.webp",
+        "text": "Testamos a água e a corrente nos pontos afetados e explicamos o que causou o problema e como evitá-lo. Limpeza do local incluída.",
+        "title": "Testado e explicado antes de sair",
+        "bullets": [
+          "Teste antes de sair",
+          "Causa explicada",
+          "Local limpo no fim"
+        ],
+        "eyebrow": "Entrega"
+      }
+    ],
+    "trust": [
+      {
+        "href": "https://www.google.com/maps/search/?api=1&query=Eletrocanaliza%C3%A7%C3%B5es&query_place_id=ChIJE3Dy-tiJJA0RBStPljOjVT0",
+        "icon": "Star",
+        "text": "46 avaliações de clientes no Porto.",
+        "title": "5,0 ★ no Google"
+      },
+      {
+        "icon": "Truck",
+        "text": "Máquina elétrica, alta pressão e ferramenta de eletricista na carrinha.",
+        "title": "Equipamento próprio"
+      },
+      {
+        "icon": "Clock",
+        "text": "Sempre que a agenda permite, vamos no próprio dia.",
+        "title": "Resposta no mesmo dia"
+      }
+    ],
+    "logo": "/logos/eletrocanalizacoes.png"
+  },
+  "lead": {
+    "nicho": "08-canalizador",
+    "nome_negocio": "Eletrocanalizações",
+    "telefone": "+351918778747",
+    "tipo_telefone": "telemovel",
+    "concelho": "Porto",
+    "freguesia": null,
+    "reviews": 46,
+    "nota": 5,
+    "maps_url": "https://www.google.com/maps/search/?api=1&query=Eletrocanaliza%C3%A7%C3%B5es&query_place_id=ChIJE3Dy-tiJJA0RBStPljOjVT0",
+    "segmento": "A_tem_social",
+    "oficio": "canalizador"
+  },
+  "enrich": {
+    "horario": {
+      "dom": "Encerrado",
+      "qua": "08:30 – 19:30",
+      "qui": "08:30 – 19:30",
+      "sab": "09:30 – 17:00",
+      "seg": "08:30 – 19:30",
+      "sex": "08:30 – 19:30",
+      "ter": "08:30 – 19:30"
+    },
+    "email": "eletrocanalizacoes@gmail.com",
+    "reviews": [
+      {
+        "date": "2026-06-30",
+        "text": "Excelente profissional. Já precisei dos seus serviços por duas vezes, ambas com alguma urgência, e respondeu sempre de forma muito rápida. Resolveu os problemas com eficiência, demonstrando competência e qualidade no trabalho realizado. Além disso, foi pontual, prestável e explicou tudo de forma clara. Recomendo sem hesitação a quem procure um picheleiro de confiança.",
+        "author": "Virginia C.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjVqjgAOYNqIc5EBraRrl6nXZXnwJnhET0ij08o-a0jmKysHJ0SA=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-07-08",
+        "text": "Serviço de excelência.\nEquipa jovem, mas contudo muito profissional.\nDe salientar que o Sr. Pedro foi sempre muito prestável, atencioso, paciente e sempre disponível para assegurar um bom serviço.\n\nGrata por tudo, recomendo a 100%",
+        "author": "FÁTIMA S.",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIEMQMDh9MeKu_BXzcC7zoROjhaV0BeOAcbPnWOxJJWxxBjiA=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "Muito atencioso e serviço de excelente qualidade! Estou muito satisfeita com o trabalho! Recomendo!!",
+        "author": "Renata T.",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocJQPUFb1yNB0FSrObTPnfK6BhKVVbmvq8yzKybzqL12fT7iFg=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "Serviço muito profissional e bem feito.\nRecomendo.\nVoltarei a usar os vossos serviços quando precisar",
+        "author": "Carlos M.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjVhxFaKV13bal3j7M3ZE5Rr6rhRCsjMdkxbe1pdfkaBAu9OV6os=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "Excelentes profissionais!\nForam bastante rápidos ao resolver um problema que tive numa máquina de lavar roupa e até ajudaram na instalação de uma outra máquina de lavar loiça. Recomendo 10/10",
+        "author": "Rosa S.",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIWSAGdQ-o-XdlIrqlH-_FsGHySEopGzN29kRFZQLInsupZxg=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "Sr. Pedro extremamente simpático e profissional. Recomendo os seus serviços! Um jovem empreendedor que terá certamente muito sucesso.",
+        "author": "Filipe O.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjX4W_ezcz0CMmaqRCnaFT0dCPBMosa5WLiLGwXA37nhJ7-CHYTC=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-07-01",
+        "text": "Excelente profissional!\nTrabalho efetuado com calma e qualidade e a simpatia acima de tudo!",
+        "author": "Amonsupra",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjUSClPFy2pptOeO9RP44ndlQG7w3-7SGmn_BM-Y1QP5PPlYuSNH=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-07-01",
+        "text": "Serviço personalizado e máxima atenção...disponibilizaram máquina de substituição até eventual reparação... aconselhamento mais adequado á situação verificada... profissionais honestos e dedicados...",
+        "author": "Pedro F.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjWiYyPV4jliedhvIbziiHrZJN04bcTnSiwszA5B6D0bdsaUR-fY=s64-c-rp-mo-ba12-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "Muito profissional, resolveu a situação num sábado a tarde, super acessível e honesto",
+        "author": "Ana B.",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIUH65aN6tcLAFXMpGbowMUOd2JUFQkydc7l3vWU0whkUbdig=s64-c-rp-mo-ba12-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-07-24",
+        "text": "Excelente profissional, instalou um aquecedor estanque e a respectiva tubagem. Recomendo bastante.",
+        "author": "Fábio C.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjV9hrfzBxzPtZ1bfygsxc_XaP3rl9Bc1tjyKf0jn8RQDS54-qfs=s64-c-rp-mo-ba12-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-07-08",
+        "text": "Muito prestável e  o trabalho ficou muito bem feito , preços muito acessíveis.\nRecomendo  a 100#",
+        "author": "Vera M.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjU6Us3w12_pMzLx4SMZLsBuN9r81-byrYZu-sgNkjCogobnn1Vo=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "Atendimento muito cordial, atenciosos e cumpridores. As avarias ficaram resolvidas. Uma referência. Recomendo!! 🙂",
+        "author": "Susana M.",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocI1jNkA1lgYJbn2kDmFgjdcPlbyHQWBMY9uPNQ68gU_JrEcYQ=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "Serviço realizado com profissionalismo. A instalação dos electrodomésticos foi feita com cuidado e tudo ficou a funcionar corretamente. Recomendo.",
+        "author": "André R.",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKecFgXacrICQCRJ_kXPvOgkEBm-vS0-N9MkgbS9GcI_7Jrug=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-07-03",
+        "text": "Fiquei muito satisfeita como serviço. Esta a funcionar bem.",
+        "author": "Fatima M.",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocKmkGmQAt9tKnDEXzVgbzaViLja0ap0w-94q9XijYEh9cwQpw=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-07-06",
+        "text": "Atenciosos, rápidos e de confiança, nada carneiros. Recomendo!",
+        "author": "Pedro M.",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocK-kDIOYEohKX-wXjRxQWjxwZm2WKhxHCTDm4XgYwQ_IJQivA=s64-c-rp-mo-ba12-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "Muito simpático e profissional gostei muito do serviço prestado",
+        "author": "Cristina B.",
+        "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIRng5AKvbR0eZ5Ikkued6W2dGhgTCBSgf2RccW8e0w2_G4ZA=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "Excelente profissional, atendimento rápido e eficaz. Recomendo",
+        "author": "Monica T.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjXf5SJD4VOOCNhr0-jCUqTjZOXMvh-gSGZC9y0KJRAlVeKgBe3N=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "5estrelas nada apontar e recomendo ótimo trabalho obrigada",
+        "author": "Susana R.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjUVj-Zudmj482iOfHO83wm3xOWKPdHpaz_kzMg6nOG0pWkxfyw=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-06-30",
+        "text": "O Pedro Pinto é um técnico competente, sério e confiável.",
+        "author": "Elias F.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjUW2SlrJv4Pl-Fm2bJAT1Ol2BGt9Efj5mU2ljk4kBdJqq-cxso=s64-c-rp-mo-br100",
+        "rating": 5
+      },
+      {
+        "date": "2026-07-01",
+        "text": "Trabalho de excelência.\nTrabalho feito com tranquilidade e qualidade.",
+        "author": "Alice B.",
+        "avatar": "https://lh3.googleusercontent.com/a-/ALV-UjWDzQlLNFx7WtGyvTnq4csPhBJpQ-ljK-PnzgdEj3_975fKKEk=s64-c-rp-mo-br100",
+        "rating": 5
+      }
+    ]
+  },
+  "cliente": {
+    "dominio": "https://eletrocanalizacoes.pt",
+    "email": "eletrocanalizacoes@gmail.com",
+    "areasServidas": [],
+    "faq": [],
+    "fundadoEm": null
+  },
+  "local": {
+    "morada": "R. Fonte Bolido 152",
+    "codigoPostal": "4585-149",
+    "localidade": "Gandra",
+    "lat": 41.206656,
+    "lng": -8.441632,
+    "website": null,
+    "sociais": {
+      "instagram": "https://www.instagram.com/eletrocanalizacoes"
+    }
+  },
+  "servico": {
+    "api": "https://sites-ia.vercel.app",
+    "site": "/08-canalizador/eletrocanalizacoes",
+    "rastrear": true
+  },
+  "fotosPropostas": []
+}
