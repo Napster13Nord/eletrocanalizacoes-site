@@ -176,6 +176,11 @@ function GoogleRatingBadge({ className = '' }) {
       </span>
 
       <span className="esu-badge__avatars">
+        {/* Decoração de 28 px: nunca à frente do herói. Os avatares reais vêm
+            do `lh3.googleusercontent.com`, e sem isto o React pré-carregava
+            três deles no `<head>` — uma ligação nova a um domínio de fora a
+            disputar largura de banda com a maior imagem da página, que é a que
+            decide o LCP. A ninguém falta um rosto de 28 px meio segundo. */}
         {avatars.map((src) => (
           <img
             key={src}
@@ -184,6 +189,8 @@ function GoogleRatingBadge({ className = '' }) {
             alt=""
             width="28"
             height="28"
+            loading="lazy"
+            fetchPriority="low"
             decoding="async"
           />
         ))}
