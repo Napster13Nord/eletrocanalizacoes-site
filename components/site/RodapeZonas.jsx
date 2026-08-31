@@ -29,7 +29,12 @@ export default function RodapeZonas() {
         <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4">
           Onde trabalhamos
         </p>
-        <div className="flex flex-wrap gap-x-5 gap-y-2.5">
+        {/* Duas colunas no telemóvel, uma linha que enrola daí para cima.
+            A doze nomes num ecrã de 390 px, o `flex-wrap` dava quatro linhas
+            irregulares com os nomes a atropelarem-se e "Vila Nova de Gaia"
+            sozinha no fim: lia-se como uma frase corrida, não como uma lista.
+            Em grelha os nomes alinham e contam-se de relance. */}
+        <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 sm:flex sm:flex-wrap sm:gap-x-5">
           {ZONAS.map((z) => (
             <Link
               key={z.caminho}
