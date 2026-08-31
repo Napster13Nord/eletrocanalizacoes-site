@@ -33,8 +33,13 @@ export default function RodapeZonas() {
             A doze nomes num ecrã de 390 px, o `flex-wrap` dava quatro linhas
             irregulares com os nomes a atropelarem-se e "Vila Nova de Gaia"
             sozinha no fim: lia-se como uma frase corrida, não como uma lista.
-            Em grelha os nomes alinham e contam-se de relance. */}
-        <div className="grid grid-cols-2 gap-x-4 gap-y-2.5 sm:flex sm:flex-wrap sm:gap-x-5">
+            Em grelha os nomes alinham e contam-se de relance.
+
+            O `gap-y-4` é para o telemóvel: com `2.5` ficavam 10 px entre linhas
+            de 20 px de altura, cada nome colado ao de baixo, e num ecrã tátil
+            os alvos ficavam a tocar-se. Na linha única do computador não muda
+            nada, que aí não há segunda linha. */}
+        <div className="grid grid-cols-2 gap-x-4 gap-y-4 sm:flex sm:flex-wrap sm:gap-x-5">
           {ZONAS.map((z) => (
             <Link
               key={z.caminho}

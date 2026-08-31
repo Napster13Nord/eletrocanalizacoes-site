@@ -112,9 +112,13 @@
     background: linear-gradient(135deg, rgb(var(--primary)) 0%, rgb(var(--primary-dark)) 100%);
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
   }
+  /* A barra do topo depois de se rolar. Era translúcida a 65% com desfoque por
+     trás, e o texto da página passava através dela: a meio de um artigo lia-se
+     o menu por cima das palavras e não se percebia onde acabava um e começava
+     o outro. Passa a branco opaco. O desfoque sai com ele, que não há nada
+     para desfocar por trás de uma superfície que tapa. */
   .glass {
-    background: rgba(249,249,249,0.65);
-    backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+    background: #FFFFFF;
     border: 1px solid rgb(var(--primary) / 0.18);
   }
   .glass-dark {
