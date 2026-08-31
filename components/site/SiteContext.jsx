@@ -115,7 +115,8 @@ const comIcones = (lista) => (lista ?? []).map((x) => ({ ...x, icon: icone(x.ico
 const SERVICO_LOCAL = { api: '', site: '', rastrear: true };
 
 export function SiteProvider({ tema, lead, enrich, cliente = null, local = null,
-                               servico = SERVICO_LOCAL, basePath = '', children }) {
+                               servico = SERVICO_LOCAL, basePath = '', zonas = null,
+                               children }) {
   const valor = useMemo(() => {
     const reviews = Array.isArray(enrich?.reviews) ? enrich.reviews : []
     return {
@@ -141,10 +142,13 @@ export function SiteProvider({ tema, lead, enrich, cliente = null, local = null,
       // Só do próprio negócio. O tema nunca traz FAQ: um genérico do nicho não
       // responde a nada e não podia ser marcado como FAQPage.
       FAQ: (cliente?.faq ?? []).filter((f) => f?.pergunta && f?.resposta),
+      // As páginas de zona. Vazias numa proposta — só um site vendido as tem —
+      // e o rodapé desaparece com elas em vez de mostrar um título sem lista.
+      ZONAS: Array.isArray(zonas) ? zonas : [],
       SERVICO: servico,
       LogoIcon: icone(tema.logoIcon),
     }
-  }, [tema, lead, enrich, cliente, local, servico, basePath])
+  }, [tema, lead, enrich, cliente, local, servico, basePath, zonas])
 
   return <Ctx.Provider value={valor}>{children}</Ctx.Provider>
 }

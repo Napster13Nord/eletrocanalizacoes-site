@@ -22,7 +22,7 @@ const CTA = process.env.NEXT_PUBLIC_CTA_URL ?? '';
 // `servico` só vem preenchido num site ejetado, onde o formulário tem de bater
 // no endpoint partilhado noutro domínio. No motor fica em branco = mesma origem.
 export default function PaginaDemo({ demo, basePath, servico }) {
-  const { tema, lead, enrich, demoId, local, cliente, modo } = demo;
+  const { tema, lead, enrich, demoId, local, cliente, modo, zonas } = demo;
   const ehCliente = modo === 'cliente';
   const raiz = cliente?.dominio?.replace(/\/$/, '');
 
@@ -52,8 +52,10 @@ export default function PaginaDemo({ demo, basePath, servico }) {
       ))}
 
       {ehCliente ? null : <BarraDemo nome={lead.nome_negocio} contacto={CONTACTO} cta={CTA} />}
+      {/* As zonas só existem num site vendido, e é o rodapé que lhes dá a
+          única porta de entrada a partir da página inicial. */}
       <Site tema={tema} lead={lead} enrich={enrich} cliente={cliente} local={local}
-            servico={servico} basePath={basePath} />
+            servico={servico} basePath={basePath} zonas={zonas} />
       {ehCliente ? null : <FaixaDemo />}
       {/* Só em propostas. O site vendido não tem seletor nenhum: as cores e a
           letra dele foram decididas na venda e ficam no tema. */}

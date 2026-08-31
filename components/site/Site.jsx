@@ -1783,7 +1783,7 @@ function Sociais() {
    10. Footer
 ---------------------------------------------------------------- */
 function Footer() {
-  const { BRAND, SERVICES, COPY, SERVICO, basePath } = useSite()
+  const { BRAND, SERVICES, COPY, SERVICO, ZONAS, basePath } = useSite()
   return (
     <footer className="bg-deep text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
@@ -1882,6 +1882,29 @@ function Footer() {
             </ul>
           </div>
         </div>
+
+        {/* As páginas de zona. Ficam aqui em baixo e não na navegação porque
+            são doze e a barra de topo tem cinco entradas — mas sem esta lista
+            eram órfãs: chegava-se a elas pelo sitemap e por mais nada, nem o
+            visitante nem o peso das ligações internas lá iam ter. */}
+        {ZONAS.length ? (
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4">
+              Onde trabalhamos
+            </p>
+            <div className="flex flex-wrap gap-x-5 gap-y-2.5">
+              {ZONAS.map((z) => (
+                <Link
+                  key={z.caminho}
+                  href={`${basePath}/${z.caminho}/`}
+                  className="text-white/70 hover:text-primary text-sm transition-colors"
+                >
+                  {z.zona}
+                </Link>
+              ))}
+            </div>
+          </div>
+        ) : null}
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/40">
@@ -1990,10 +2013,10 @@ function ArvoreDoSite() {
   )
 }
 
-export default function Site({ tema, lead, enrich, cliente, local, servico, basePath }) {
+export default function Site({ tema, lead, enrich, cliente, local, servico, basePath, zonas }) {
   return (
     <SiteProvider tema={tema} lead={lead} enrich={enrich} cliente={cliente}
-                  local={local} servico={servico} basePath={basePath}>
+                  local={local} servico={servico} basePath={basePath} zonas={zonas}>
       <ArvoreDoSite />
     </SiteProvider>
   )
