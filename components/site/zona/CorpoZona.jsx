@@ -46,15 +46,21 @@ export default function CorpoZona({ zona }) {
             <Marca />
             <span className="font-display font-bold text-lg">{BRAND.name}</span>
           </Link>
-          {/* O telefone acima da dobra. Quem chega a esta página tem uma fuga
-              em casa e não veio ler. */}
-          <a
-            href={`tel:${BRAND.phoneTel}`}
-            onClick={() => registarClique('telefone_click', SERVICO)}
-            className="mt-10 inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-lg shadow-primary/25"
-          >
-            <Phone className="h-4 w-4" /> {BRAND.phoneDisplay}
-          </a>
+          {/* Os botões numa linha própria. Estavam soltos ao lado do `<Link>`
+              da marca, e como os três são `inline-flex` cabiam todos na mesma
+              linha: o telefone encostava ao nome do negócio e o `mt-10` não
+              fazia nada, porque uma margem de topo não muda a linha de um
+              elemento em linha. Este `div` é de bloco, e é ele que os desce. */}
+          <div className="mt-10 flex flex-wrap items-center gap-3">
+            {/* O telefone acima da dobra. Quem chega a esta página tem uma fuga
+                em casa e não veio ler. */}
+            <a
+              href={`tel:${BRAND.phoneTel}`}
+              onClick={() => registarClique('telefone_click', SERVICO)}
+              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-lg shadow-primary/25"
+            >
+              <Phone className="h-4 w-4" /> {BRAND.phoneDisplay}
+            </a>
           {/* O WhatsApp ao lado do telefone: nas quatro primeiras semanas do
               Pedro houve sete cliques no WhatsApp e dois no botão de
               assistência. É por ali que esta gente fala.
@@ -70,19 +76,20 @@ export default function CorpoZona({ zona }) {
               tratar artigos de nomes de terras é um poço sem fundo. O título já
               vem com o artigo certo de quem escreveu a página, e entre aspas
               lê-se como um nome, que não pede concordância nenhuma. */}
-          {BRAND.whatsapp ? (
-            <a
-              href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(
-                `Olá, vim da página "${zona.titulo}" do site da ${BRAND.name} e queria pedir informações.`,
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => registarClique('whatsapp_click', SERVICO)}
-              className="mt-3 ml-0 sm:ml-3 inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 font-semibold text-white hover:bg-white/10"
-            >
-              <MessageCircle className="h-4 w-4" /> WhatsApp
-            </a>
-          ) : null}
+            {BRAND.whatsapp ? (
+              <a
+                href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(
+                  `Olá, vim da página "${zona.titulo}" do site da ${BRAND.name} e queria pedir informações.`,
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => registarClique('whatsapp_click', SERVICO)}
+                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-6 py-3 font-semibold text-white hover:bg-white/10"
+              >
+                <MessageCircle className="h-4 w-4" /> WhatsApp
+              </a>
+            ) : null}
+          </div>
           {BRAND.phoneNote ? (
             <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-white/50">
               {BRAND.phoneNote}
