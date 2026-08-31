@@ -497,5 +497,739 @@
     "site": "/08-canalizador/eletrocanalizacoes",
     "rastrear": true
   },
-  "fotosPropostas": []
+  "fotosPropostas": [],
+  "zonas": [
+    {
+      "zona": "Ermesinde",
+      "caminho": "canalizador-ermesinde",
+      "titulo": "Canalizador e eletricista em Ermesinde",
+      "descricao": "Canalizador e eletricista em Ermesinde: fugas de água, entupimentos e avarias elétricas. Partimos de Gandra, a cerca de 15 minutos. Ligue +351918778747.",
+      "html": "<h1>Canalizador e eletricista em Ermesinde</h1>\n<p>Se tem uma fuga de água, um cano entupido ou um quadro elétrico a disparar em Ermesinde, saiba que estamos a cerca de 9 km, uns 15 minutos de carro a partir de Gandra. Água ou luz, resolvemos as duas: é a mesma equipa que vai a casa, com a ferramenta de canalizador e a de eletricista na carrinha.</p>\n<p>No Google temos 5,0 e 46 avaliações.</p>\n<h2>O que resolvemos em Ermesinde</h2>\n<p>A maior parte das chamadas são fugas de água, entupimentos e avarias elétricas. Além disso, fazemos:</p>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda, com máquina elétrica e jacto de água de alta pressão.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n<li><strong>Diagnóstico antes de abrir</strong>: localizamos o ponto exato da fuga ou da avaria antes de partir seja o que for.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. Por isso localizamos o ponto exato antes de abrir o primeiro azulejo, e perceber a causa é o que evita repetir o problema daqui a um mês.</p>\n<h2>Como corre a visita</h2>\n<p>Trabalhamos por marcação. Quando nos liga, tentamos sempre encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. O preço fica combinado ao telefone e avisamos quando vamos a caminho.</p>\n<p>Ao telefone percebemos se o problema é de água ou de eletricidade e que aparelhos estão afetados: isso diz-nos o que levar na carrinha. Em casa, reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria elétrica e, quando faz sentido, inspecionamos para perceber porque aconteceu. Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e como evitá-lo, e deixamos o local limpo.</p>\n<p>Além de Ermesinde, vamos também a Sobrado, Rebordosa e Gandra.</p>\n<h2>Ligue e diga o que se passa</h2>\n<p>Descreva o que está a acontecer e combinamos o dia e a hora. Atendemos de segunda a sexta das 08:30 às 19:30 e sábado das 09:30 às 17:00.</p>\n<p><strong>+351918778747</strong> (chamada para a rede móvel nacional)</p>",
+      "vizinhas": [
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        },
+        {
+          "zona": "Paços de Ferreira",
+          "caminho": "canalizador-pacos-de-ferreira"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Ermesinde",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ermesinde",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Ermesinde",
+              "item": "https://eletrocanalizacoes.pt/canalizador-ermesinde/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Gandra",
+      "caminho": "canalizador-gandra",
+      "titulo": "Canalizador e eletricista em Gandra",
+      "descricao": "Fugas de água, entupimentos e avarias elétricas em Gandra. Marcação para o mesmo dia sempre que a agenda permite. 5,0 no Google. Ligue 918778747.",
+      "html": "<h1>Canalizador e eletricista em Gandra</h1>\n<p>É em Gandra que temos a morada, na R. Fonte Bolido 152, por isso a nossa carrinha está a cerca de 1,9 km de si, uns 10 minutos de carro. Se tem uma fuga de água, uma sanita entupida ou um quadro elétrico a disparar, ligue e diga o que se passa. Água ou luz, resolvemos as duas.</p>\n<p>Ao telefone tentamos perceber logo se o problema é de água ou de eletricidade e que aparelhos estão afetados. Isso diz-nos o que levar na carrinha e evita a segunda visita. O preço fica combinado nessa chamada.</p>\n<h2>O que resolvemos em Gandra</h2>\n<ul>\n<li><strong>Fugas de água:</strong> deteção e reparação em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas:</strong> pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos:</strong> sanitas, lava-loiças, ralos e tubos de queda, com máquina elétrica e jacto de água de alta pressão.</li>\n<li><strong>Canalização geral:</strong> substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho:</strong> instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n<li><strong>Diagnóstico antes de abrir:</strong> uma mancha no teto raramente está por cima da fuga, por isso localizamos o ponto exato antes de tirar o primeiro azulejo.</li>\n</ul>\n<p>Fugas de água, entupimentos e avarias elétricas são a maior parte das chamadas. Perceber a causa é o que evita repetir o problema daqui a um mês, e é por isso que, quando faz sentido, inspecionamos antes de dar o trabalho por fechado.</p>\n<h2>Marcação, intervenção e entrega</h2>\n<p>Trabalhamos por marcação. Quando nos liga, tentamos encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. Avisamos quando vamos a caminho, protegemos o espaço onde trabalhamos e, antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e como evitá-lo. A limpeza do local está incluída.</p>\n<p>A partir de Gandra também vamos a Sobrado, Rebordosa e Valongo.</p>\n<p>No Google temos 5,0 com base em 46 avaliações, feitas por clientes que ficaram com a fuga, o entupimento ou a avaria resolvidos.</p>\n<h2>Ligue e diga o que se passa</h2>\n<p>Estamos disponíveis de segunda a sexta das 08:30 às 19:30 e no sábado das 09:30 às 17:00. Ligue <strong>+351918778747</strong> (chamada para a rede móvel nacional) e vamos a caminho.</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        },
+        {
+          "zona": "Paços de Ferreira",
+          "caminho": "canalizador-pacos-de-ferreira"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Gandra",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Gandra",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Gandra",
+              "item": "https://eletrocanalizacoes.pt/canalizador-gandra/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Lordelo",
+      "caminho": "canalizador-lordelo",
+      "titulo": "Canalizador e eletricista em Lordelo",
+      "descricao": "Canalizador e eletricista em Lordelo: fugas de água, entupimentos e avarias elétricas resolvidos na mesma visita. Saímos de Gandra, a 15 minutos.",
+      "html": "<h1>Canalizador e eletricista em Lordelo</h1>\n<p>Se tem uma fuga de água, uma sanita entupida ou o quadro elétrico a disparar em Lordelo, saímos de Gandra e estamos a cerca de 8,7 km, uns 15 minutos de carro. Água ou luz, resolvemos as duas com a mesma equipa, o que evita ter de chamar dois profissionais para o mesmo problema.</p>\n<p>Trabalhamos por marcação. Quando nos liga, tentamos encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. O preço é combinado ao telefone e avisamos quando vamos a caminho.</p>\n<p>No Google temos 5,0 com base em 46 avaliações.</p>\n<h2>O que fazemos em Lordelo</h2>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda, com máquina elétrica e jacto de água de alta pressão.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n<li><strong>Diagnóstico antes de abrir</strong>: localizamos o ponto exato da fuga ou da avaria antes de partir seja o que for.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. Por isso procuramos o ponto exato antes de levantar o primeiro azulejo, e a reparação fica localizada onde o problema está.</p>\n<h2>Como corre a visita</h2>\n<p>Ao telefone percebemos se o problema é de água ou de eletricidade e que aparelhos estão afetados. Isso diz-nos logo o que levar na carrinha: máquina elétrica, alta pressão ou ferramenta de eletricista.</p>\n<p>Na casa, reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria elétrica e, quando faz sentido, inspecionamos para perceber porque aconteceu. Perceber a causa é o que evita repetir o problema daqui a um mês.</p>\n<p>Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e como evitá-lo. A limpeza do local está incluída.</p>\n<p>Além de Lordelo, trabalhamos também em Sobrado, Rebordosa e Gandra.</p>\n<h2>Ligue e diga o que se passa</h2>\n<p>Descreva o problema e dizemos-lhe quando podemos ir.</p>\n<p><strong>+351918778747</strong> (chamada para a rede móvel nacional)</p>\n<p>Horário: Seg a Sex 08:30 às 19:30, Sáb 09:30 às 17:00.</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        },
+        {
+          "zona": "Paços de Ferreira",
+          "caminho": "canalizador-pacos-de-ferreira"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Lordelo",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Lordelo",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Lordelo",
+              "item": "https://eletrocanalizacoes.pt/canalizador-lordelo/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Paredes",
+      "caminho": "canalizador-paredes",
+      "titulo": "Canalização e eletricidade em Paredes",
+      "descricao": "Canalização e eletricidade em Paredes: fugas de água, entupimentos e avarias elétricas resolvidas pela mesma equipa. A 15 minutos, saindo de Gandra.",
+      "html": "<h1>Canalização e eletricidade em Paredes</h1>\n<p>Se tem uma fuga de água, um tubo entupido ou um quadro elétrico a disparar em Paredes, saímos de Gandra e estamos aí em cerca de 15 minutos, são 9,2 km de distância. Água ou luz, resolvemos as duas.</p>\n<p>Ao telefone tentamos perceber logo o que se passa: se o problema é de água ou de eletricidade e que aparelhos estão afetados. Isso diz-nos o que levar na carrinha, para chegarmos com a ferramenta certa e não termos de voltar outro dia.</p>\n<h2>O que resolvemos em Paredes</h2>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda, com máquina elétrica e jacto de água de alta pressão.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n<li><strong>Diagnóstico antes de abrir</strong>: localizamos o ponto exato da fuga ou da avaria antes de partir seja o que for.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. Por isso localizamos o ponto exato antes de abrir o primeiro azulejo, e a reparação fica localizada onde tem de ficar.</p>\n<h2>Como funciona a marcação</h2>\n<p>Trabalhamos por marcação. Quando nos liga, tentamos sempre encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. Combinamos dia e hora, avisamos quando vamos a caminho e o preço é combinado ao telefone.</p>\n<p>Na intervenção, reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria elétrica e, quando faz sentido, inspecionamos para perceber porque aconteceu. Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e como evitá-lo, e deixamos o local limpo.</p>\n<p>Além de Paredes, trabalhamos também em Sobrado, Rebordosa e Gandra.</p>\n<h2>Fale connosco</h2>\n<p>Temos 5,0 no Google, com base em 46 avaliações.</p>\n<p>Horário de segunda a sexta, das 08:30 às 19:30, e sábado das 09:30 às 17:00. Diga-nos o que se passa e vamos a caminho: <strong>+351918778747</strong> (chamada para a rede móvel nacional).</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paços de Ferreira",
+          "caminho": "canalizador-pacos-de-ferreira"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Paredes",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Paredes",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Paredes",
+              "item": "https://eletrocanalizacoes.pt/canalizador-paredes/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Paços de Ferreira",
+      "caminho": "canalizador-pacos-de-ferreira",
+      "titulo": "Canalizador e eletricista em Paços de Ferreira",
+      "descricao": "Canalizador e eletricista em Paços de Ferreira: fugas de água, entupimentos e avarias elétricas resolvidos pela mesma equipa. 5,0 no Google. Ligue já.",
+      "html": "<h1>Canalizador e eletricista em Paços de Ferreira</h1>\n<p>Saímos de Gandra e Paços de Ferreira fica a 9,7 km, cerca de 15 minutos de carro. Se tem uma fuga de água, um tubo entupido ou o quadro elétrico a disparar, é a mesma equipa que trata das duas coisas: água ou luz, resolvemos as duas.</p>\n<p>No Google temos 5,0 com base em 46 avaliações.</p>\n<h2>O que resolvemos</h2>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda, com máquina elétrica e jacto de água de alta pressão.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n<li><strong>Diagnóstico antes de abrir</strong>: localizamos o ponto exato da fuga ou da avaria antes de partir seja o que for.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. Por isso localizamos o ponto exato antes de abrir o primeiro azulejo, e a reparação fica localizada em vez de se transformar numa obra.</p>\n<h2>Como é a visita</h2>\n<p>Ao telefone percebemos o que se passa: se o problema é de água ou de eletricidade, que aparelhos estão afetados e que tipo de edifício é. Isso diz-nos logo o que levar na carrinha, que traz máquina elétrica, alta pressão e ferramenta de eletricista.</p>\n<p>Na intervenção reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria elétrica e, quando faz sentido, inspecionamos para perceber porque aconteceu. Perceber a causa é o que evita repetir o problema daqui a um mês. Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e limpamos o local.</p>\n<h2>Marcação em Paços de Ferreira</h2>\n<p>Trabalhamos por marcação. Quando nos liga, tentamos encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. Combinamos dia, hora e preço ao telefone, e avisamos quando vamos a caminho. Também servimos as terras em volta, como Sobrado, Rebordosa e Gandra.</p>\n<p>Horário: segunda a sexta das 08:30 às 19:30, sábado das 09:30 às 17:00.</p>\n<p>Diga-nos o que se passa e vamos a caminho. Ligue <strong>+351918778747</strong> (chamada para a rede móvel nacional).</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Paços de Ferreira",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Paços de Ferreira",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Paços de Ferreira",
+              "item": "https://eletrocanalizacoes.pt/canalizador-pacos-de-ferreira/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Penafiel",
+      "caminho": "canalizador-penafiel",
+      "titulo": "Canalizador e eletricista em Penafiel",
+      "descricao": "Canalizador e eletricista em Penafiel: fugas de água, entupimentos e avarias elétricas resolvidos na mesma visita. Saímos de Gandra, a 20 minutos.",
+      "html": "<h1>Canalizador e eletricista em Penafiel</h1>\n<p>Uma fuga de água numa parede, uma sanita entupida com a água a subir ou um quadro elétrico que dispara não esperam pelo dia seguinte. Se está em Penafiel e precisa de alguém que resolva, ligue: <strong>+351918778747</strong> (chamada para a rede móvel nacional).</p>\n<p>Saímos de Gandra, a cerca de 13 km e 20 minutos de carro de Penafiel. Trabalhamos também em Sobrado e Rebordosa, no caminho.</p>\n<h2>Água ou luz, resolvemos as duas</h2>\n<p>Somos a mesma equipa para os dois lados do problema, e isso evita andar à procura de dois técnicos diferentes:</p>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda, com máquina elétrica e jacto de água de alta pressão.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n<li><strong>Diagnóstico antes de abrir</strong>: localizamos o ponto exato da fuga ou da avaria antes de partir seja o que for.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. É por isso que localizamos o ponto exato antes de abrir o primeiro azulejo.</p>\n<h2>Como corre uma assistência em Penafiel</h2>\n<p>Ao telefone percebemos primeiro o que se passa: se o problema é de água ou de eletricidade, que aparelhos estão afetados e que tipo de edifício é. Isso diz-nos logo o que levar na carrinha, que traz máquina elétrica, alta pressão e ferramenta de eletricista.</p>\n<p>Trabalhamos por marcação. Quando nos liga, tentamos encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. O preço é combinado ao telefone e avisamos quando vamos a caminho.</p>\n<p>No local, reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria elétrica e, quando faz sentido, inspecionamos para perceber porque aconteceu. Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e como evitá-lo, e deixamos o local limpo. Perceber a causa é o que evita repetir o problema daqui a um mês.</p>\n<p>No Google temos 5,0 de nota, com base em 46 avaliações.</p>\n<h2>Ligue e diga-nos o que se passa</h2>\n<p>Descreva o problema e dizemos-lhe quando podemos estar em Penafiel.</p>\n<p><strong>+351918778747</strong> (chamada para a rede móvel nacional). Seg a Sex 08:30 às 19:30, Sáb 09:30 às 17:00.</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Penafiel",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Penafiel",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Penafiel",
+              "item": "https://eletrocanalizacoes.pt/canalizador-penafiel/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Porto",
+      "caminho": "canalizador-porto",
+      "titulo": "Canalizador e eletricista no Porto",
+      "descricao": "Canalização e eletricidade no Porto: fugas de água, entupimentos e avarias elétricas resolvidas na mesma visita. 5,0 no Google. Ligue 918778747.",
+      "html": "<h1>Canalizador e eletricista no Porto</h1>\n<p>Se tem uma fuga de água a alastrar, uma sanita entupida ou o quadro elétrico a disparar, precisa de alguém que perceba do problema e chegue com a ferramenta certa. A Eletrocanalizações trabalha no Porto em canalização e eletricidade, e resolve as duas coisas na mesma visita.</p>\n<p>Saímos de Gandra, a cerca de 14,8 km do Porto, o que dá por volta de 25 minutos de carro. Trabalhamos por marcação e, quando nos liga, tentamos sempre encaixar no mesmo dia ou no mais próximo possível. Dizemos-lhe logo ao telefone quando podemos ir, e avisamos quando vamos a caminho.</p>\n<p>No Google temos 5,0 com base em 46 avaliações de clientes.</p>\n<h2>O que resolvemos no Porto</h2>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda, com máquina elétrica e jacto de água de alta pressão.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n<li><strong>Diagnóstico antes de abrir</strong>: localizamos o ponto exato da fuga ou da avaria antes de partir seja o que for.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. Por isso localizamos o ponto exato antes de abrir o primeiro azulejo, e a reparação fica localizada onde o problema está.</p>\n<h2>Como corre a intervenção</h2>\n<p>Começa pela chamada. Saber se o problema é de água ou de eletricidade, e que aparelhos estão afetados, diz-nos logo o que levar na carrinha, que traz máquina elétrica, alta pressão e ferramenta de eletricista. O preço fica combinado ao telefone.</p>\n<p>Depois vem a intervenção: reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria elétrica e, quando faz sentido, inspecionamos para perceber porque aconteceu. Perceber a causa é o que evita repetir o problema daqui a um mês.</p>\n<p>Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e como evitá-lo. A limpeza do local está incluída.</p>\n<h2>Ligue e diga o que se passa</h2>\n<p>Além do Porto, trabalhamos também em Gandra, Sobrado e Rebordosa. Horário: segunda a sexta das 08:30 às 19:30, sábado das 09:30 às 17:00.</p>\n<p>Ligue <strong>+351918778747</strong> (chamada para a rede móvel nacional) e descreva o que se passa. Vamos a caminho.</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Porto",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Porto",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Porto",
+              "item": "https://eletrocanalizacoes.pt/canalizador-porto/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Rebordosa",
+      "caminho": "canalizador-rebordosa",
+      "titulo": "Canalizador e eletricista em Rebordosa",
+      "descricao": "Canalizador e eletricista em Rebordosa: fugas de água, entupimentos e avarias elétricas resolvidos pela mesma equipa, a 1,9 km de distância. Ligue já.",
+      "html": "<h1>Canalizador e eletricista em Rebordosa</h1>\n<p>Se tem uma fuga de água a manchar a parede, uma sanita entupida com a água a subir ou o quadro elétrico a disparar, não precisa de procurar duas pessoas diferentes. Água ou luz, resolvemos as duas. Saímos de Gandra, a 1,9 km de Rebordosa, cerca de 10 minutos de carro, e chegamos com a ferramenta certa na carrinha: máquina elétrica, jacto de água de alta pressão e equipamento de eletricista.</p>\n<p>No Google temos 5,0 com base em 46 avaliações.</p>\n<h2>O que resolvemos em Rebordosa</h2>\n<p>A maior parte das chamadas são fugas de água, entupimentos e avarias elétricas. Trabalhamos em:</p>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. Localizamos o ponto exato antes de abrir o primeiro azulejo, e a reparação fica localizada onde tem de ser.</p>\n<h2>Como funciona a visita</h2>\n<p>Ao telefone percebemos logo se o problema é de água ou de eletricidade e que aparelhos estão afetados. Isso diz-nos o que levar. O preço é combinado nessa mesma chamada.</p>\n<p>Trabalhamos por marcação e tentamos sempre encaixar no mesmo dia ou no mais próximo possível, dizendo-lhe logo quando podemos ir. Avisamos quando vamos a caminho.</p>\n<p>Na intervenção reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria elétrica e, quando faz sentido, inspecionamos para perceber porque aconteceu. Perceber a causa é o que evita repetir o problema daqui a um mês.</p>\n<p>Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e como evitá-lo. A limpeza do local está incluída.</p>\n<h2>Ligue e diga o que se passa</h2>\n<p>Além de Rebordosa, damos assistência em Sobrado, Gandra e Valongo. Estamos disponíveis de segunda a sexta, das 08:30 às 19:30, e sábado das 09:30 às 17:00.</p>\n<p>Descreva-nos o que se passa e vamos a caminho: <strong>+351918778747</strong> (chamada para a rede móvel nacional).</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Rebordosa",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Rebordosa",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Rebordosa",
+              "item": "https://eletrocanalizacoes.pt/canalizador-rebordosa/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Rio Tinto",
+      "caminho": "canalizador-rio-tinto",
+      "titulo": "Canalizador e eletricista em Rio Tinto",
+      "descricao": "Canalizador e eletricista em Rio Tinto: fugas de água, entupimentos e avarias elétricas resolvidos na mesma visita. 5,0 no Google. Ligue +351918778747.",
+      "html": "<h1>Canalizador e eletricista em Rio Tinto</h1>\n<p>Se tem uma fuga a molhar a parede, uma sanita entupida com a água a subir ou o quadro elétrico a disparar, saímos de Gandra e chegamos a Rio Tinto: são 10,5 km, cerca de 20 minutos de carro.</p>\n<p>Somos a Eletrocanalizações e fazemos as duas coisas, água e eletricidade. Isso quer dizer que não precisa de duas chamadas nem de dois orçamentos quando o problema começa num sítio e aparece no outro. Fugas de água, entupimentos, avarias elétricas e pequenos curto-circuitos são a maior parte do que nos chamam para resolver.</p>\n<p>Temos 5,0 no Google, com base em 46 avaliações.</p>\n<h2>O que resolvemos em Rio Tinto</h2>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda, com máquina elétrica e jacto de água de alta pressão.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n<li><strong>Diagnóstico antes de abrir</strong>: localizamos o ponto exato da fuga ou da avaria antes de partir seja o que for.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. Por isso procuramos o ponto exato antes de levantar o primeiro azulejo, e a reparação fica localizada.</p>\n<h2>Como funciona a chamada</h2>\n<p>Ao telefone percebemos o que se passa, se o problema é de água ou de eletricidade e que aparelhos estão afetados. Isso diz-nos logo o que levar na carrinha, e o preço fica combinado nessa conversa.</p>\n<p>Trabalhamos por marcação. Quando nos liga, tentamos encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. Avisamos quando vamos a caminho.</p>\n<p>Na intervenção reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria e, quando faz sentido, inspecionamos para perceber porque aconteceu. Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos a causa e deixamos o local limpo.</p>\n<p>Também vamos a Sobrado, Rebordosa e Gandra.</p>\n<h2>Ligue e diga o que se passa</h2>\n<p><strong>+351918778747</strong>. Segunda a sexta das 08:30 às 19:30, sábado das 09:30 às 17:00.</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Rio Tinto",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Rio Tinto",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Rio Tinto",
+              "item": "https://eletrocanalizacoes.pt/canalizador-rio-tinto/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Sobrado",
+      "caminho": "canalizador-sobrado",
+      "titulo": "Canalizador e eletricista em Sobrado",
+      "descricao": "Canalizador e eletricista em Sobrado: fugas de água, entupimentos e avarias elétricas resolvidos por marcação, a 1,9 km de Gandra. Ligue +351918778747.",
+      "html": "<h1>Canalizador e eletricista em Sobrado</h1>\n<p>Se tem uma fuga de água a marcar o teto, uma sanita entupida com a água a subir ou o quadro elétrico a disparar, saiba que partimos de Gandra e Sobrado fica a 1,9 km, cerca de 10 minutos de carro. É perto, e isso conta quando o problema é agora.</p>\n<p>Somos a Eletrocanalizações e fazemos água e eletricidade. Resolvemos as duas, muitas vezes na mesma visita, com a máquina elétrica, o jacto de água de alta pressão e a ferramenta de eletricista já na carrinha.</p>\n<h2>O que resolvemos em Sobrado</h2>\n<ul>\n<li><strong>Fugas de água:</strong> deteção e reparação em tubagem, torneiras e autoclismos, sem partir a casa toda. Uma mancha no teto raramente está por cima da fuga, por isso localizamos o ponto exato antes de abrir o primeiro azulejo.</li>\n<li><strong>Avarias elétricas:</strong> pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos:</strong> sanitas, lava-loiças, ralos e tubos de queda.</li>\n<li><strong>Canalização geral:</strong> substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho:</strong> instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n</ul>\n<p>Fugas, entupimentos e avarias elétricas são a maior parte das chamadas que recebemos. Perceber a causa é o que evita repetir o mesmo problema daqui a um mês.</p>\n<h2>Como funciona a marcação</h2>\n<p>Trabalhamos por marcação. Quando nos liga, tentamos sempre encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. Ao telefone percebemos se o problema é de água ou de eletricidade e que aparelhos estão afetados, porque isso diz-nos o que levar na carrinha. O preço fica combinado nessa conversa e avisamos quando vamos a caminho.</p>\n<p>Na intervenção reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria e, quando faz sentido, inspecionamos para perceber porque aconteceu. Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e como evitá-lo, e deixamos o local limpo.</p>\n<p>No Google temos 5,0 com base em 46 avaliações.</p>\n<p>Além de Sobrado, vamos também a Rebordosa, Gandra e Valongo.</p>\n<h2>Ligue e diga o que se passa</h2>\n<p>Descreva o que está a acontecer e dizemos-lhe quando podemos ir. Ligue <strong>+351918778747</strong> (chamada para a rede móvel nacional). Horário: Seg a Sex 08:30 às 19:30, Sáb 09:30 às 17:00.</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Sobrado",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Sobrado",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Sobrado",
+              "item": "https://eletrocanalizacoes.pt/canalizador-sobrado/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Valongo",
+      "caminho": "canalizador-valongo",
+      "titulo": "Canalizador e eletricista em Valongo",
+      "descricao": "Canalizador e eletricista em Valongo: fugas de água, entupimentos e avarias elétricas resolvidos pela mesma equipa, a 10 minutos de Gandra. 5,0 no Google.",
+      "html": "<h1>Canalizador e eletricista em Valongo</h1>\n<p>Saímos de Gandra e Valongo fica a 5,2 km, cerca de 10 minutos de carro. Se tem uma fuga de água, uma sanita entupida ou o quadro elétrico a disparar, ligue e explique o que se passa. Água ou luz, resolvemos as duas.</p>\n<p>Ao telefone percebemos logo se o problema é de água ou de eletricidade e que aparelhos estão afetados. Isso diz-nos o que levar na carrinha: máquina elétrica, jacto de água de alta pressão ou ferramenta de eletricista. O preço é combinado ao telefone e avisamos quando vamos a caminho.</p>\n<h2>O que resolvemos em Valongo</h2>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. Localizamos o ponto exato antes de abrir o primeiro azulejo, e a reparação fica localizada onde o problema está.</p>\n<h2>Como é a visita</h2>\n<p>Trabalhamos por marcação. Quando nos liga, tentamos encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. O horário é de segunda a sexta, das 08:30 às 19:30, e sábado das 09:30 às 17:00.</p>\n<p>Na intervenção reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria elétrica e, quando faz sentido, inspecionamos para perceber porque aconteceu. Perceber a causa é o que evita repetir o problema daqui a um mês. Antes de sair, testamos a água e a corrente nos pontos afetados, explicamos o que causou o problema e como evitá-lo, e limpamos o local.</p>\n<p>No Google temos 5,0 com base em 46 avaliações de clientes.</p>\n<p>Além de Valongo, vamos também a Sobrado, Rebordosa e Gandra.</p>\n<h2>Ligue e diga o que se passa</h2>\n<p>Descreva o problema e combinamos o dia, a hora e o preço na mesma chamada.</p>\n<p><strong>+351918778747</strong> (chamada para a rede móvel nacional)</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Valongo",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Valongo",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Valongo",
+              "item": "https://eletrocanalizacoes.pt/canalizador-valongo/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zona": "Vila Nova de Gaia",
+      "caminho": "canalizador-vila-nova-de-gaia",
+      "titulo": "Canalizador e eletricista em Vila Nova de Gaia",
+      "descricao": "Canalizador e eletricista em Vila Nova de Gaia: fugas de água, entupimentos e avarias elétricas resolvidas pela mesma equipa. 5,0 no Google. Ligue já.",
+      "html": "<h1>Canalizador e eletricista em Vila Nova de Gaia</h1>\n<p>Uma fuga na parede, uma sanita entupida com a água a subir ou o quadro elétrico a disparar são problemas que não esperam pela semana seguinte. Somos a Eletrocanalizações e resolvemos água e eletricidade com a mesma equipa, o que significa uma só chamada e uma só visita quando o problema toca nas duas coisas.</p>\n<p>Partimos de Gandra e Vila Nova de Gaia fica a cerca de 17,6 km, uns 30 minutos de carro. Trabalhamos por marcação: quando nos liga, tentamos sempre encaixar no mesmo dia ou no mais próximo possível, e dizemos-lhe logo quando podemos ir. O preço é combinado ao telefone e avisamos quando vamos a caminho.</p>\n<h2>O que resolvemos em Vila Nova de Gaia</h2>\n<ul>\n<li><strong>Fugas de água</strong>: deteção e reparação de fugas em tubagem, torneiras e autoclismos, sem partir a casa toda.</li>\n<li><strong>Avarias elétricas</strong>: pequenos curto-circuitos, quadros que disparam, tomadas e pontos de luz sem corrente.</li>\n<li><strong>Desentupimentos</strong>: sanitas, lava-loiças, ralos e tubos de queda, com máquina elétrica e jacto de água de alta pressão.</li>\n<li><strong>Canalização geral</strong>: substituição de tubagem, torneiras, autoclismos, sifões e ligações de máquinas.</li>\n<li><strong>Casas de banho</strong>: instalação e substituição de bases de duche, sanitas, lavatórios e misturadoras.</li>\n<li><strong>Diagnóstico antes de abrir</strong>: localizamos o ponto exato da fuga ou da avaria antes de partir seja o que for.</li>\n</ul>\n<p>Uma mancha no teto raramente está por cima da fuga. Por isso localizamos o ponto exato antes de abrir o primeiro azulejo, e a reparação fica localizada em vez de se transformar numa obra.</p>\n<h2>Como corre a visita</h2>\n<p>Ao telefone percebemos se o problema é de água ou de eletricidade e que aparelhos estão afetados, porque isso diz-nos logo o que levar na carrinha: máquina elétrica, alta pressão e ferramenta de eletricista. Na intervenção reparamos a fuga, desobstruímos o tubo ou corrigimos a avaria e, quando faz sentido, inspecionamos para perceber porque aconteceu. Antes de sair testamos a água e a corrente nos pontos afetados, explicamos a causa e como evitá-la, e deixamos o local limpo. Perceber a causa é o que evita repetir o problema daqui a um mês.</p>\n<p>O trabalho da casa tem 5,0 no Google, com base em 46 avaliações.</p>\n<p>De Vila Nova de Gaia também atendemos quem nos chama de Sobrado, Rebordosa e Gandra. Estamos disponíveis de segunda a sexta, das 08:30 às 19:30, e sábado das 09:30 às 17:00.</p>\n<h2>Ligue e diga-nos o que se passa</h2>\n<p>Descreva o problema e combinamos o dia: <strong>+351918778747</strong> (chamada para a rede móvel nacional).</p>",
+      "vizinhas": [
+        {
+          "zona": "Ermesinde",
+          "caminho": "canalizador-ermesinde"
+        },
+        {
+          "zona": "Gandra",
+          "caminho": "canalizador-gandra"
+        },
+        {
+          "zona": "Lordelo",
+          "caminho": "canalizador-lordelo"
+        },
+        {
+          "zona": "Paredes",
+          "caminho": "canalizador-paredes"
+        }
+      ],
+      "jsonld": [
+        {
+          "@context": "https://schema.org",
+          "@type": "Plumber",
+          "@id": "https://eletrocanalizacoes.pt/#negocio",
+          "name": "Eletrocanalizações",
+          "url": "https://eletrocanalizacoes.pt",
+          "areaServed": {
+            "@type": "City",
+            "name": "Vila Nova de Gaia",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Vila Nova de Gaia",
+              "addressCountry": "PT"
+            }
+          }
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://eletrocanalizacoes.pt/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Vila Nova de Gaia",
+              "item": "https://eletrocanalizacoes.pt/canalizador-vila-nova-de-gaia/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
