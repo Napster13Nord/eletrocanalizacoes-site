@@ -1788,7 +1788,12 @@ export function Footer() {
   return (
     <footer className="bg-deep text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
-        <div className="grid lg:grid-cols-5 gap-12">
+        {/* Seis colunas e não cinco. A dos contactos leva duas, como a da
+            marca: com uma só, um email como `eletrocanalizacoes@gmail.com`
+            partia-se a meio da palavra e ficava com o `om` na linha de baixo.
+            A marca continua com duas e o que perde é folga — a tagline já tem
+            o `max-w-xs` dela. */}
+        <div className="grid lg:grid-cols-6 gap-12">
           {/* O `text-lg` está no contentor e não na tagline de propósito: o acerto
               da serif no globals.css é em `em`, e uma classe text-* no próprio
               elemento tapava-o. Assim a tagline herda 18 px e a serif cresce a
@@ -1852,7 +1857,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="lg:col-span-2">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4">
               Contactos
             </p>
