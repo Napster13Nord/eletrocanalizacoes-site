@@ -268,8 +268,8 @@ export function Marca({ dim = 'h-9 w-9', ring = false }) {
 /* ----------------------------------------------------------------
    1. Navbar
 ---------------------------------------------------------------- */
-function Navbar() {
-  const { BRAND, NAV_LINKS, COPY, SERVICO } = useSite()
+export function Navbar() {
+  const { BRAND, NAV_LINKS, COPY, SERVICO, basePath } = useSite()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
 
@@ -287,7 +287,7 @@ function Navbar() {
         }`}
       >
         <nav className="flex items-center justify-between gap-4">
-          <a href="#inicio" className="flex items-center gap-2 group shrink-0">
+          <a href={`${basePath}/#inicio`} className="flex items-center gap-2 group shrink-0">
             <Marca ring />
             <span
               className={`font-display font-bold tracking-tight text-lg transition-colors ${
@@ -302,7 +302,7 @@ function Navbar() {
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
-                href={l.href}
+                href={l.href.startsWith('#') ? `${basePath}/${l.href}` : l.href}
                 className={`font-body text-sm transition-colors ${
                   scrolled ? 'text-muted hover:text-ink' : 'text-white/75 hover:text-white'
                 }`}
@@ -314,7 +314,7 @@ function Navbar() {
 
           <div className="flex items-center gap-2">
             <a
-              href="#contactos"
+              href={`${basePath}/#contactos`}
               className="magnetic-btn hidden sm:inline-flex items-center gap-1.5 bg-primary text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg shadow-primary/25"
             >
               {COPY.navCta}
@@ -355,7 +355,7 @@ function Navbar() {
           {NAV_LINKS.map((l) => (
             <a
               key={l.href}
-              href={l.href}
+              href={l.href.startsWith('#') ? `${basePath}/${l.href}` : l.href}
               onClick={() => setOpen(false)}
               className="font-display text-4xl font-bold text-white/90 hover:text-primary transition-colors"
             >
@@ -383,7 +383,7 @@ function Navbar() {
 // trazia de volta um segundo mais tarde. Quem chega ao site via um ecrã em
 // branco durante esse tempo, e é o pior sítio possível para o fazer.
 function Hero() {
-  const { BRAND, HERO, COPY, SERVICO } = useSite()
+  const { BRAND, HERO, COPY, SERVICO, basePath } = useSite()
   const Particle = HERO.ParticleIcon
 
   return (
@@ -444,7 +444,7 @@ function Hero() {
 
         <div className="mt-10 flex flex-wrap gap-3">
           <a
-            href="#contactos"
+            href={`${basePath}/#contactos`}
             className="magnetic-btn inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold shadow-lg shadow-primary/30"
           >
             {COPY.heroCta} <ArrowUpRight className="h-4 w-4" />
@@ -1822,7 +1822,7 @@ export function Footer() {
             <ul className="space-y-2.5">
               {SERVICES.map((s) => (
                 <li key={s.title}>
-                  <a href="#servicos" className="text-white/70 hover:text-primary text-sm transition-colors">
+                  <a href={`${basePath}/#servicos`} className="text-white/70 hover:text-primary text-sm transition-colors">
                     {s.title}
                   </a>
                 </li>
@@ -1844,7 +1844,7 @@ export function Footer() {
               ].map((l) => (
                 <li key={l.label}>
                   <a
-                    href={l.href}
+                    href={l.href.startsWith('#') ? `${basePath}/${l.href}` : l.href}
                     {...(l.href.startsWith('http')
                       ? { target: '_blank', rel: 'noopener noreferrer' }
                       : {})}

@@ -10,7 +10,7 @@ import { ArrowUpRight, MessageCircle, Phone } from 'lucide-react'
 import { useSite } from '../SiteContext'
 import Registar from '../Registar'
 import RodapeZonas from '../RodapeZonas'
-import { Marca, Footer } from '../Site'
+import { Navbar, Footer } from '../Site'
 
 // Copiado do `Site.jsx`, dez linhas, e de propósito: aquele ficheiro é gerado
 // pelo `port-app.mjs` a partir do template Vite e diz "não editar à mão".
@@ -36,22 +36,19 @@ export default function CorpoZona({ zona }) {
           o cliente pagava por páginas que os números diziam não existir. Conta
           para o mesmo site, como a inicial. */}
       {SERVICO?.rastrear ? <Registar servico={SERVICO} /> : null}
-      <div className="bg-deep text-white pt-16 pb-20">
+      {/* O menu da página inicial, o mesmo componente. Aqui estava o logótipo
+          solto com o nome ao lado, sem ligação nenhuma para o resto do site:
+          quem chegava do Google só podia voltar atrás. O menu é `fixed` e
+          flutua por cima, daí o `pt-32` em vez do `pt-16`. */}
+      <Navbar />
+      <div className="bg-deep text-white pt-32 pb-20">
         <div className="max-w-3xl mx-auto px-6 sm:px-10">
-          <Link href={basePath || '/'} className="inline-flex items-center gap-2 group">
-            {/* O logótipo do próprio negócio, o mesmo que a barra do topo da
-                página inicial mostra. Aqui estava o ícone do nicho dentro de um
-                círculo, e num cliente com marca própria a página de zona
-                parecia de outro negócio. */}
-            <Marca />
-            <span className="font-display font-bold text-lg">{BRAND.name}</span>
-          </Link>
-          {/* Os botões numa linha própria. Estavam soltos ao lado do `<Link>`
-              da marca, e como os três são `inline-flex` cabiam todos na mesma
-              linha: o telefone encostava ao nome do negócio e o `mt-10` não
-              fazia nada, porque uma margem de topo não muda a linha de um
-              elemento em linha. Este `div` é de bloco, e é ele que os desce. */}
-          <div className="mt-10 flex flex-wrap items-center gap-3">
+          {/* Os botões numa linha própria. Estavam soltos ao lado do logótipo,
+              e como os três eram `inline-flex` cabiam todos na mesma linha: o
+              telefone encostava ao nome do negócio e a margem de topo não fazia
+              nada, porque não muda a linha de um elemento em linha. Este `div`
+              é de bloco, e é ele que os separa. */}
+          <div className="flex flex-wrap items-center gap-3">
             {/* O telefone acima da dobra. Quem chega a esta página tem uma fuga
                 em casa e não veio ler. */}
             <a

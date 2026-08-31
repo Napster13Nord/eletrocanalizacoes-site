@@ -1,7 +1,7 @@
 'use client'
 // GERADO por scripts/port-app.mjs a partir de _gerador/tpl/LegalLayout.jsx — não editar à mão.
 import Link from 'next/link'
-import { Marca, Footer } from '../Site'
+import { Navbar, Footer } from '../Site'
 import RodapeZonas from '../RodapeZonas'
 import { ArrowUpRight } from 'lucide-react'
 import { useSite } from '../SiteContext'
@@ -10,12 +10,9 @@ export default function LegalLayout({ title, updated, children }) {
   const { BRAND, LogoIcon, basePath } = useSite()
   return (
     <div className="min-h-screen bg-background">
-      <div className="bg-deep text-white pt-16 pb-20">
+      <Navbar />
+      <div className="bg-deep text-white pt-32 pb-20">
         <div className="max-w-3xl mx-auto px-6 sm:px-10">
-          <Link href={basePath || '/'} className="inline-flex items-center gap-2 group">
-            <Marca />
-            <span className="font-display font-bold text-lg">{BRAND.name}</span>
-          </Link>
           <h1 className="mt-12 font-display text-4xl sm:text-5xl font-bold tracking-tighter">
             {title}
           </h1>
