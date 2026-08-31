@@ -16,7 +16,7 @@ import CorpoZona from './zona/CorpoZona'
 import { variaveisDoTema } from '../../lib/cores'
 
 export default function PaginaZona({ demo, zona, basePath, servico }) {
-  const { tema, lead, enrich, cliente, local } = demo
+  const { tema, lead, enrich, cliente, local, zonas } = demo
 
   return (
     <>
@@ -25,8 +25,10 @@ export default function PaginaZona({ demo, zona, basePath, servico }) {
       {/* O `servico` entra como na página inicial. Sem ele o contexto caía no
           `SERVICO_LOCAL` e o registo de visitas batia em `/api/track` no
           domínio do próprio cliente, onde essa rota não existe. */}
+      {/* As zonas todas, e não só esta: o rodapé desta página lista-as como o
+          da página inicial. */}
       <SiteProvider tema={tema} lead={lead} enrich={enrich} cliente={cliente} local={local}
-                    servico={servico} basePath={basePath}>
+                    servico={servico} basePath={basePath} zonas={zonas}>
         <CorpoZona zona={zona} />
       </SiteProvider>
       {/* Os dados estruturados vêm prontos do motor. Um bloco por página, e o

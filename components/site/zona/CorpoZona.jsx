@@ -9,6 +9,8 @@ import Link from 'next/link'
 import { ArrowUpRight, MessageCircle, Phone } from 'lucide-react'
 import { useSite } from '../SiteContext'
 import Registar from '../Registar'
+import RodapeZonas from '../RodapeZonas'
+import { Marca, Footer } from '../Site'
 
 // Copiado do `Site.jsx`, dez linhas, e de propósito: aquele ficheiro é gerado
 // pelo `port-app.mjs` a partir do template Vite e diz "não editar à mão".
@@ -37,9 +39,11 @@ export default function CorpoZona({ zona }) {
       <div className="bg-deep text-white pt-16 pb-20">
         <div className="max-w-3xl mx-auto px-6 sm:px-10">
           <Link href={basePath || '/'} className="inline-flex items-center gap-2 group">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary">
-              <LogoDoSite />
-            </span>
+            {/* O logótipo do próprio negócio, o mesmo que a barra do topo da
+                página inicial mostra. Aqui estava o ícone do nicho dentro de um
+                círculo, e num cliente com marca própria a página de zona
+                parecia de outro negócio. */}
+            <Marca />
             <span className="font-display font-bold text-lg">{BRAND.name}</span>
           </Link>
           {/* O telefone acima da dobra. Quem chega a esta página tem uma fuga
@@ -92,26 +96,11 @@ export default function CorpoZona({ zona }) {
         dangerouslySetInnerHTML={{ __html: zona.html }}
       />
 
-      {/* As vizinhas: é assim que o rastreador chega às outras zonas sem
-          depender só do sitemap, e é a ligação que faz sentido para quem lê. */}
-      {zona.vizinhas?.length ? (
-        <div className="max-w-3xl mx-auto px-6 sm:px-10 pb-4">
-          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-muted/70">
-            Também trabalhamos aqui
-          </p>
-          <div className="mt-3 flex flex-wrap gap-2">
-            {zona.vizinhas.map((v) => (
-              <Link
-                key={v.caminho}
-                href={`${basePath || ''}/${v.caminho}/`}
-                className="rounded-full border border-ink/10 px-3 py-1 text-sm hover:bg-ink/5"
-              >
-                {v.zona}
-              </Link>
-            ))}
-          </div>
-        </div>
-      ) : null}
+      {/* Aqui estavam as vizinhas, em pastilhas: era assim que o rastreador
+          chegava às outras zonas sem depender do sitemap. O rodapé passou a
+          listá-las todas, e as duas listas ficavam uma por cima da outra com o
+          botão pelo meio. A do rodapé fica, que é a que está em todas as
+          páginas; o `zona.vizinhas` continua nos dados e não faz mal a ninguém. */}
 
       <div className="max-w-3xl mx-auto px-6 sm:px-10 py-12">
         <Link
@@ -121,12 +110,13 @@ export default function CorpoZona({ zona }) {
           Ver todos os serviços <ArrowUpRight className="h-4 w-4" />
         </Link>
       </div>
+
+      {/* O rodapé da página inicial, o mesmo componente. Sem ele estas páginas
+          acabavam a meio: nem contactos, nem horário, nem páginas legais, e
+          quem chegasse aqui do Google não tinha para onde ir a não ser voltar
+          atrás. */}
+      <RodapeZonas />
+      <Footer />
     </div>
   )
-}
-
-// O ícone do ofício vem do tema, como no resto do site.
-function LogoDoSite() {
-  const { LogoIcon } = useSite()
-  return <LogoIcon className="h-5 w-5 text-white" strokeWidth={2.4} />
 }

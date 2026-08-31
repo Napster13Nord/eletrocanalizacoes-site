@@ -2,6 +2,7 @@
 // GERADO por scripts/port-app.mjs a partir de _gerador/tpl/App.jsx — não editar à mão.
 import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import RodapeZonas from './RodapeZonas'
 import {
   ArrowUpRight,
   Phone,
@@ -245,7 +246,7 @@ function GoogleRatingBadge({ className = '' }) {
 // Com logótipo do negócio mostra-se a imagem; sem ele, o ícone do nicho dentro
 // do círculo da cor primária. Um negócio que já tem marca própria não quer ver
 // um símbolo genérico no cimo do site dele.
-function Marca({ dim = 'h-9 w-9', ring = false }) {
+export function Marca({ dim = 'h-9 w-9', ring = false }) {
   const { BRAND, LogoIcon } = useSite()
   if (BRAND.logo) {
     return (
@@ -1782,8 +1783,8 @@ function Sociais() {
 /* ----------------------------------------------------------------
    10. Footer
 ---------------------------------------------------------------- */
-function Footer() {
-  const { BRAND, SERVICES, COPY, SERVICO, ZONAS, basePath } = useSite()
+export function Footer() {
+  const { BRAND, SERVICES, COPY, SERVICO, basePath } = useSite()
   return (
     <footer className="bg-deep text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
@@ -1882,29 +1883,6 @@ function Footer() {
             </ul>
           </div>
         </div>
-
-        {/* As páginas de zona. Ficam aqui em baixo e não na navegação porque
-            são doze e a barra de topo tem cinco entradas — mas sem esta lista
-            eram órfãs: chegava-se a elas pelo sitemap e por mais nada, nem o
-            visitante nem o peso das ligações internas lá iam ter. */}
-        {ZONAS.length ? (
-          <div className="mt-16 pt-8 border-t border-white/10">
-            <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 mb-4">
-              Onde trabalhamos
-            </p>
-            <div className="flex flex-wrap gap-x-5 gap-y-2.5">
-              {ZONAS.map((z) => (
-                <Link
-                  key={z.caminho}
-                  href={`${basePath}/${z.caminho}/`}
-                  className="text-white/70 hover:text-primary text-sm transition-colors"
-                >
-                  {z.zona}
-                </Link>
-              ))}
-            </div>
-          </div>
-        ) : null}
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/40">
@@ -2007,6 +1985,7 @@ function ArvoreDoSite() {
         <Faq />
         <ContactForm />
       </main>
+      <RodapeZonas />
       <Footer />
       <FloatingContact />
     </div>

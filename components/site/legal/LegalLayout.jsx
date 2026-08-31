@@ -1,6 +1,8 @@
 'use client'
 // GERADO por scripts/port-app.mjs a partir de _gerador/tpl/LegalLayout.jsx — não editar à mão.
 import Link from 'next/link'
+import { Marca, Footer } from '../Site'
+import RodapeZonas from '../RodapeZonas'
 import { ArrowUpRight } from 'lucide-react'
 import { useSite } from '../SiteContext'
 
@@ -11,9 +13,7 @@ export default function LegalLayout({ title, updated, children }) {
       <div className="bg-deep text-white pt-16 pb-20">
         <div className="max-w-3xl mx-auto px-6 sm:px-10">
           <Link href={basePath || '/'} className="inline-flex items-center gap-2 group">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary">
-              <LogoIcon className="h-5 w-5 text-white" strokeWidth={2.4} />
-            </span>
+            <Marca />
             <span className="font-display font-bold text-lg">{BRAND.name}</span>
           </Link>
           <h1 className="mt-12 font-display text-4xl sm:text-5xl font-bold tracking-tighter">
@@ -37,6 +37,8 @@ export default function LegalLayout({ title, updated, children }) {
           Voltar ao início <ArrowUpRight className="h-4 w-4" />
         </Link>
       </div>
+      <RodapeZonas />
+      <Footer />
     </div>
   )
 }

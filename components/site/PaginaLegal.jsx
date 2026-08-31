@@ -12,7 +12,7 @@ export const PAGINAS = {
 };
 
 export default function PaginaLegal({ demo, qual, basePath }) {
-  const { tema, lead, enrich, cliente, local, modo } = demo;
+  const { tema, lead, enrich, cliente, local, modo, zonas } = demo;
   const { Componente } = PAGINAS[qual];
 
   return (
@@ -20,7 +20,7 @@ export default function PaginaLegal({ demo, qual, basePath }) {
       <style>{`:root{${Object.entries(variaveisDoTema(tema.colors))
         .map(([k, v]) => `${k}:${v}`).join(';')}}`}</style>
       <SiteProvider tema={tema} lead={lead} enrich={enrich} cliente={cliente} local={local}
-                    basePath={basePath}>
+                    basePath={basePath} zonas={zonas}>
         <Componente />
       </SiteProvider>
       {modo === 'cliente' ? null : <FaixaDemo />}
