@@ -479,7 +479,8 @@
     "email": "eletrocanalizacoes@gmail.com",
     "areasServidas": [],
     "faq": [],
-    "fundadoEm": null
+    "fundadoEm": null,
+    "nomeCurto": null
   },
   "local": {
     "morada": "R. Fonte Bolido 152",
