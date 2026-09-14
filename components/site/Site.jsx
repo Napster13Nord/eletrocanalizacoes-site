@@ -1257,6 +1257,65 @@ function ServicesGrid() {
 }
 
 /* ----------------------------------------------------------------
+   6b. Galeria
+---------------------------------------------------------------- */
+function Galeria() {
+  const { GALERIA, COPY } = useSite()
+  const ref = useRef(null)
+
+  useAnimacao((gsap) => {
+    gsap.from('.galeria-foto', {
+      scrollTrigger: { trigger: ref.current, start: 'top 85%', once: true },
+      y: 30,
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.06,
+      ease: 'power3.out',
+    })
+  }, ref)
+
+  // Sem fotografias do próprio negócio não há secção. Um mosaico de banco de
+  // imagens é pior do que galeria nenhuma: promete um trabalho que não é o dele.
+  if (!GALERIA.length) return null
+  const copy = COPY.gallery ?? { eyebrow: 'Galeria', titleA: 'O trabalho', titleB: 'da casa.' }
+
+  return (
+    <section id="galeria" ref={ref} className="bg-background py-24 sm:py-32">
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
+        <div className="max-w-2xl mb-14">
+          <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-primary-dark mb-4">
+            {copy.eyebrow}
+          </p>
+          <h2 className="font-display text-4xl sm:text-5xl font-bold tracking-tighter text-balance">
+            {copy.titleA}{' '}
+            <span className="font-serif italic font-medium text-primary">{copy.titleB}</span>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
+          {GALERIA.map((f) => (
+            <figure
+              key={f.img}
+              className="galeria-foto group relative overflow-hidden rounded-2xl bg-surface aspect-[3/4]"
+            >
+              <img
+                src={f.img}
+                srcSet={conjunto(f.img, [640, 960, 1280])}
+                sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
+                alt={f.alt}
+                loading="lazy"
+                decoding="async"
+                className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
+            </figure>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+/* ----------------------------------------------------------------
    7. TrustSignals
 ---------------------------------------------------------------- */
 function TrustSignals() {
@@ -1367,6 +1426,10 @@ function ReviewsTicker() {
   }, [open])
 
   const review = open === null ? null : REVIEWS[open]
+
+  // Sem avaliações a secção sai inteira, como a galeria. Vazia ficava só o
+  // título e o botão "Ver todas no Google", que leva a quem as quis tirar.
+  if (!REVIEWS.length) return null
 
   return (
     <section id="avaliacoes" className="bg-background py-24 sm:py-32 overflow-hidden">
@@ -1800,7 +1863,7 @@ function Sociais() {
    10. Footer
 ---------------------------------------------------------------- */
 export function Footer() {
-  const { BRAND, SERVICES, COPY, SERVICO, basePath } = useSite()
+  const { BRAND, SERVICES, REVIEWS, COPY, SERVICO, basePath } = useSite()
   return (
     <footer className="bg-deep text-white pt-20 pb-10">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
@@ -1856,7 +1919,8 @@ export function Footer() {
               {[
                 { label: 'Como trabalhamos', href: '#metodo' },
                 { label: 'Processo', href: '#processo' },
-                { label: 'Avaliações', href: '#avaliacoes' },
+                // Sem avaliações a secção não existe, e o link não levava a lado nenhum.
+                ...(REVIEWS.length ? [{ label: 'Avaliações', href: '#avaliacoes' }] : []),
                 { label: 'Contactos', href: '#contactos' },
                 { label: 'Ver no Google Maps', href: BRAND.maps },
               ].map((l) => (
@@ -2011,6 +2075,7 @@ function ArvoreDoSite() {
         <Pillars />
         <Protocol />
         <ServicesGrid />
+        <Galeria />
         <TrustSignals />
         <ReviewsTicker />
         <Faq />

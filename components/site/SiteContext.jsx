@@ -47,8 +47,10 @@ const nomeCurto = (nome) => {
   return p.length <= 2 ? nome : p.slice(0, 2).join(' ')
 }
 
-export function construirBrand(tema, lead, enrich, local = null) {
+export function construirBrand(tema, lead, enrich, local = null, cliente = null) {
   const telemovel = lead.tipo_telefone === 'telemovel'
+  // "davidsolutions.pt", sem esquema nem www. Vazio numa proposta, que não tem domínio.
+  const dominio = String(cliente?.dominio ?? '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')
   const prova = mostrarProvaGoogle(lead.nota, lead.reviews)
   // Morada real ou nada. Só ~25% das leads a têm; sem rua não se inventa uma.
   const morada = local?.morada
@@ -73,7 +75,9 @@ export function construirBrand(tema, lead, enrich, local = null) {
     // reviews com foto fica vazio e o template usa os avatares de fallback.
     avatars: (enrich?.reviews ?? []).map((r) => r.avatar).filter(Boolean).slice(0, 3),
     name: lead.nome_negocio,
-    short: nomeCurto(lead.nome_negocio),
+    // Como a lead pediu para ser chamada numa ronda de alterações. As duas
+    // primeiras palavras do Maps davam "CHAVES DAVID" a quem é "DAVID SOLUTIONS".
+    short: tema.nomeCurto ?? nomeCurto(lead.nome_negocio),
     tagline: tema.copy?.tagline ?? '',
     phoneDisplay: lead.telefone,
     phoneTel: String(lead.telefone || '').replace(/\s+/g, ''),
@@ -90,7 +94,14 @@ export function construirBrand(tema, lead, enrich, local = null) {
     // Nos projetos Vite esta frase é escrita à mão por nicho; aqui uma app serve
     // centenas de leads, por isso constrói-se com o nome real do negócio. Sem
     // isto o link do WhatsApp saía com "?text=undefined".
-    whatsappMsg: `Olá, vim pelo site da ${lead.nome_negocio} e queria pedir informações.`,
+    //
+    // Num site vendido diz o domínio: o nome do Maps vinha em maiúsculas e
+    // comprido ("vim pelo site da CHAVES DAVID SOLUTIONS"), e o artigo nem
+    // sempre batia certo.
+    dominio,
+    whatsappMsg: dominio
+      ? `Olá, vim pelo site ${dominio} e queria pedir informações.`
+      : `Olá, vim pelo site da ${lead.nome_negocio} e queria pedir informações.`,
     city: lead.concelho ?? '',
     region: lead.freguesia ?? '',
     // O badge do herói e a linha das estrelas dependem de `ratingValue`. Abaixo
@@ -125,7 +136,7 @@ export function SiteProvider({ tema, lead, enrich, cliente = null, local = null,
     const reviews = Array.isArray(enrich?.reviews) ? enrich.reviews : []
     return {
       basePath,
-      BRAND: construirBrand(tema, lead, enrich, local),
+      BRAND: construirBrand(tema, lead, enrich, local, cliente),
       NAV_LINKS: tema.nav,
       SERVICES: comIcones(tema.services),
       HERO: { ...tema.hero, ParticleIcon: icone(tema.heroParticleIcon) },
@@ -140,9 +151,13 @@ export function SiteProvider({ tema, lead, enrich, cliente = null, local = null,
       STEPS: tema.steps,
       TRUST: comIcones(tema.trust),
       COPY: tema.copy,
+      // Fotografias do próprio negócio, quando a lead as dá numa ronda de
+      // alterações. Vazio no tema do nicho: a galeria desaparece com elas.
+      GALERIA: Array.isArray(tema.galeria) ? tema.galeria : [],
       // Menos de 4 avaliações reais -> secção em estado vazio, nunca preenchida
       // com ficção (PLANO.md §8.1).
-      REVIEWS: reviews.length >= 4 ? reviews : [],
+      // `semAvaliacoes` = a lead pediu para as tirar numa ronda de alterações.
+      REVIEWS: !tema.semAvaliacoes && reviews.length >= 4 ? reviews : [],
       // Só do próprio negócio. O tema nunca traz FAQ: um genérico do nicho não
       // responde a nada e não podia ser marcado como FAQPage.
       FAQ: (cliente?.faq ?? []).filter((f) => f?.pergunta && f?.resposta),

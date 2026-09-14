@@ -76,7 +76,9 @@ export default function CorpoZona({ zona }) {
             {BRAND.whatsapp ? (
               <a
                 href={`https://wa.me/${BRAND.whatsapp}?text=${encodeURIComponent(
-                  `Olá, vim da página "${zona.titulo}" do site da ${BRAND.name} e queria pedir informações.`,
+                  BRAND.dominio
+                    ? `Olá, vim da página "${zona.titulo}" do site ${BRAND.dominio} e queria pedir informações.`
+                    : `Olá, vim da página "${zona.titulo}" do site da ${BRAND.name} e queria pedir informações.`,
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
