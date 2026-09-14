@@ -2,7 +2,7 @@ import Link from 'next/link';
 import dados from '../site.data.json';
 import { variaveisDoTema } from '../lib/cores';
 
-export const metadata = { title: `Página não encontrada — ${dados.lead.nome_negocio}` };
+export const metadata = { title: `Página não encontrada - ${dados.lead.nome_negocio}` };
 
 export default function NaoEncontrada() {
   return (

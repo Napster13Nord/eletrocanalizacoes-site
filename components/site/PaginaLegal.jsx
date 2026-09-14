@@ -34,7 +34,7 @@ export function metadataLegal(demo, qual) {
   const pagina = PAGINAS[qual];
   if (!pagina) return {};
   return {
-    title: demo ? `${pagina.titulo} — ${demo.lead.nome_negocio}` : pagina.titulo,
+    title: demo ? `${pagina.titulo} - ${demo.lead.nome_negocio}` : pagina.titulo,
     robots: { index: false, follow: true },
   };
 }
